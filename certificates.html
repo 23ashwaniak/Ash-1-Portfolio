@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Certificates - Ashwani Singh</title>
+    <meta name="description" content="Professional certifications and achievements of Ashwani Singh in web development, programming, and related technologies.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Progress Bar -->
-    <div class="progress-bar" id="progressBar"></div>
+    <div class="progress-bar" id="progressBar" aria-label="Page scroll progress"></div>
 
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="nav-container">
             <div class="logo">
-                <a href="index.html">AS</a>
+                <a href="index.html" aria-label="Ashwani Singh - Home">AS</a>
             </div>
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
@@ -25,28 +29,28 @@
                 <li><a href="certificates.html" class="nav-link active">Certificates</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
-            <div class="mobile-menu">
+            <button class="mobile-menu" aria-label="Toggle mobile menu">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </nav>
 
     <!-- Page Header -->
-    <div class="page-header">
+    <header class="page-header bg-gradient">
         <div class="container">
             <h1>My Certificates</h1>
             <p>Professional certifications and achievements in web development</p>
         </div>
-    </div>
+    </header>
 
     <!-- Certificates Section -->
-    <section class="certificates-page">
+    <section class="certificates-page section">
         <div class="container">
             <!-- Certificates Grid -->
-            <div class="certificates-grid">
-                <div class="certificate-card fade-in">
+            <div class="certificates-grid grid-3col">
+                <div class="certificate-card card fade-in">
                     <div class="cert-header">
                         <div class="cert-icon">
                             <i class="fab fa-html5"></i>
@@ -64,17 +68,17 @@
                             <span>Web Standards</span>
                         </div>
                         <div class="cert-actions">
-                            <button class="view-cert-btn" onclick="viewCertificate('html5')">
+                            <button class="btn btn-view" onclick="viewCertificate('html5')">
                                 <i class="fas fa-eye"></i> View Certificate
                             </button>
-                            <button class="download-cert-btn" onclick="downloadCertificate('html5')">
+                            <button class="btn-download" onclick="downloadCertificate('html5')" aria-label="Download HTML5 Certificate">
                                 <i class="fas fa-download"></i>
                             </button>
                         </div>
                     </div>
                 </div>
 
-                <div class="certificate-card fade-in">
+                <div class="certificate-card card fade-in">
                     <div class="cert-header">
                         <div class="cert-icon">
                             <i class="fab fa-css3-alt"></i>
@@ -84,25 +88,25 @@
                     <div class="cert-content">
                         <h3>CSS3 & Responsive Design</h3>
                         <p class="cert-provider">Advanced Styling Certification</p>
-                        <p class="cert-description">Advanced styling techniques, animations, flexbox, grid systems, and responsive design principles for modern web development.</p>
+                        <p class="cert-description">Advanced CSS3 features, responsive design, animations, and modern layout techniques.</p>
                         <div class="cert-skills">
                             <span>CSS3</span>
                             <span>Flexbox</span>
                             <span>Grid</span>
-                            <span>Responsive Design</span>
+                            <span>Media Queries</span>
                         </div>
                         <div class="cert-actions">
-                            <button class="view-cert-btn" onclick="viewCertificate('css3')">
+                            <button class="btn btn-view" onclick="viewCertificate('css3')">
                                 <i class="fas fa-eye"></i> View Certificate
                             </button>
-                            <button class="download-cert-btn" onclick="downloadCertificate('css3')">
+                            <button class="btn-download" onclick="downloadCertificate('css3')" aria-label="Download CSS3 Certificate">
                                 <i class="fas fa-download"></i>
                             </button>
                         </div>
                     </div>
                 </div>
 
-                <div class="certificate-card fade-in">
+                <div class="certificate-card card fade-in">
                     <div class="cert-header">
                         <div class="cert-icon">
                             <i class="fab fa-js-square"></i>
@@ -112,25 +116,25 @@
                     <div class="cert-content">
                         <h3>JavaScript Programming</h3>
                         <p class="cert-provider">Modern Web Development</p>
-                        <p class="cert-description">ES6+ modern JavaScript, DOM manipulation, event handling, async programming, and building interactive web applications.</p>
+                        <p class="cert-description">ES6+ JavaScript, DOM manipulation, async programming, and modern development practices.</p>
                         <div class="cert-skills">
-                            <span>JavaScript ES6+</span>
-                            <span>DOM Manipulation</span>
-                            <span>Async Programming</span>
+                            <span>ES6+</span>
+                            <span>DOM API</span>
+                            <span>Async/Await</span>
                             <span>Event Handling</span>
                         </div>
                         <div class="cert-actions">
-                            <button class="view-cert-btn" onclick="viewCertificate('javascript')">
+                            <button class="btn btn-view" onclick="viewCertificate('javascript')">
                                 <i class="fas fa-eye"></i> View Certificate
                             </button>
-                            <button class="download-cert-btn" onclick="downloadCertificate('javascript')">
+                            <button class="btn-download" onclick="downloadCertificate('javascript')" aria-label="Download JavaScript Certificate">
                                 <i class="fas fa-download"></i>
                             </button>
                         </div>
                     </div>
                 </div>
 
-                <div class="certificate-card fade-in">
+                <div class="certificate-card card fade-in">
                     <div class="cert-header">
                         <div class="cert-icon">
                             <i class="fab fa-react"></i>
@@ -148,17 +152,17 @@
                             <span>State Management</span>
                         </div>
                         <div class="cert-actions">
-                            <button class="view-cert-btn" onclick="viewCertificate('react')">
+                            <button class="btn btn-view" onclick="viewCertificate('react')">
                                 <i class="fas fa-eye"></i> View Certificate
                             </button>
-                            <button class="download-cert-btn" onclick="downloadCertificate('react')">
+                            <button class="btn-download" onclick="downloadCertificate('react')" aria-label="Download React Certificate">
                                 <i class="fas fa-download"></i>
                             </button>
                         </div>
                     </div>
                 </div>
 
-                <div class="certificate-card fade-in">
+                <div class="certificate-card card fade-in">
                     <div class="cert-header">
                         <div class="cert-icon">
                             <i class="fab fa-python"></i>
@@ -176,17 +180,17 @@
                             <span>Clean Code</span>
                         </div>
                         <div class="cert-actions">
-                            <button class="view-cert-btn" onclick="viewCertificate('python')">
+                            <button class="btn btn-view" onclick="viewCertificate('python')">
                                 <i class="fas fa-eye"></i> View Certificate
                             </button>
-                            <button class="download-cert-btn" onclick="downloadCertificate('python')">
+                            <button class="btn-download" onclick="downloadCertificate('python')" aria-label="Download Python Certificate">
                                 <i class="fas fa-download"></i>
                             </button>
                         </div>
                     </div>
                 </div>
 
-                <div class="certificate-card fade-in">
+                <div class="certificate-card card fade-in">
                     <div class="cert-header">
                         <div class="cert-icon">
                             <i class="fas fa-globe"></i>
@@ -204,10 +208,10 @@
                             <span>Web Standards</span>
                         </div>
                         <div class="cert-actions">
-                            <button class="view-cert-btn" onclick="viewCertificate('webdev')">
+                            <button class="btn btn-view" onclick="viewCertificate('webdev')">
                                 <i class="fas fa-eye"></i> View Certificate
                             </button>
-                            <button class="download-cert-btn" onclick="downloadCertificate('webdev')">
+                            <button class="btn-download" onclick="downloadCertificate('webdev')" aria-label="Download Web Development Certificate">
                                 <i class="fas fa-download"></i>
                             </button>
                         </div>
@@ -217,21 +221,21 @@
 
             <!-- Statistics -->
             <div class="cert-stats fade-in">
-                <h2>Certification Statistics</h2>
-                <div class="stats-grid">
-                    <div class="stat-card">
+                <h2 class="text-center">Certification Statistics</h2>
+                <div class="stats-grid grid-responsive">
+                    <div class="stat-card card text-center">
                         <div class="stat-number">6</div>
                         <div class="stat-label">Certificates Earned</div>
                     </div>
-                    <div class="stat-card">
+                    <div class="stat-card card text-center">
                         <div class="stat-number">5</div>
                         <div class="stat-label">Technologies Covered</div>
                     </div>
-                    <div class="stat-card">
+                    <div class="stat-card card text-center">
                         <div class="stat-number">100+</div>
                         <div class="stat-label">Hours of Learning</div>
                     </div>
-                    <div class="stat-card">
+                    <div class="stat-card card text-center">
                         <div class="stat-number">2024</div>
                         <div class="stat-label">Most Recent</div>
                     </div>
@@ -239,21 +243,21 @@
             </div>
 
             <!-- CTA Section -->
-            <div class="cert-cta fade-in">
+            <div class="cert-cta fade-in text-center">
                 <h3>Ready to Work Together?</h3>
                 <p>These certifications represent my commitment to continuous learning and professional development in web technologies.</p>
                 <div class="cta-buttons">
-                    <a href="contact.html" class="btn-primary">Start a Project</a>
-                    <a href="resume.html" class="btn-secondary">View Full Resume</a>
+                    <a href="contact.html" class="btn btn-primary">Start a Project</a>
+                    <a href="resume.html" class="btn btn-secondary">View Full Resume</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Certificate Modal -->
-    <div id="certModal" class="cert-modal">
+    <div id="certModal" class="cert-modal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
         <div class="modal-content">
-            <span class="modal-close" onclick="closeCertModal()">&times;</span>
+            <button class="modal-close" onclick="closeCertModal()" aria-label="Close modal">&times;</button>
             <div id="modalContent"></div>
         </div>
     </div>
@@ -274,13 +278,13 @@
                 <div class="footer-section">
                     <h4>Follow Me</h4>
                     <div class="social-links">
-                        <a href="https://www.instagram.com/cool_dude_ashwani/" target="_blank" class="social-link">
+                        <a href="https://www.instagram.com/cool_dude_ashwani/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/ashwani-singh-26084725b/" target="_blank" class="social-link">
+                        <a href="https://www.linkedin.com/in/ashwani-singh-26084725b/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="https://github.com/23ashwaniak" target="_blank" class="social-link">
+                        <a href="https://github.com/23ashwaniak" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
                             <i class="fab fa-github"></i>
                         </a>
                     </div>
@@ -294,7 +298,7 @@
     </footer>
 
     <!-- Scroll to Top Button -->
-    <button class="scroll-to-top" id="scrollToTop">
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
         <i class="fas fa-arrow-up"></i>
     </button>
 

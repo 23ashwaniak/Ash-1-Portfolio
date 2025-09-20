@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ashwani Singh - Full Stack Developer</title>
+    <meta name="description" content="Ashwani Singh - Aspiring Full Stack Web Developer with expertise in HTML5, CSS3, JavaScript, React, PHP, and MySQL.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- Progress Bar -->
-    <div class="progress-bar" id="progressBar"></div>
+    <div class="progress-bar" id="progressBar" aria-label="Page scroll progress"></div>
 
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="nav-container">
             <div class="logo">
-                <a href="index.html">AS</a>
+                <a href="index.html" aria-label="Ashwani Singh - Home">AS</a>
             </div>
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link active">Home</a></li>
@@ -26,34 +30,35 @@
                 <li><a href="certificates.html" class="nav-link">Certificates</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
-            <div class="mobile-menu">
+            <button class="mobile-menu" aria-label="Toggle mobile menu">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="hero-bg"></div>
         <div class="hero-content">
             <h1>Hi, I'm Ashwani Singh</h1>
             <p class="subtitle">Aspiring Full Stack Web Developer</p>
             <p class="description">Passionate about creating innovative and user-friendly web applications. Currently pursuing Master's in Computer Applications with a focus on modern web technologies and clean, maintainable code.</p>
             <div class="cta-buttons">
-                <a href="about.html" class="cta-button">Learn More</a>
-                <a href="resume.html" class="cta-button">View Resume</a>
+                <a href="about.html" class="btn btn-primary cta-button">Learn More</a>
+                <a href="resume.html" class="btn btn-secondary cta-button">View Resume</a>
             </div>
         </div>
     </section>
 
     <!-- Quick About Section -->
-    <section id="quick-about" class="section about-preview">
+    <section id="quick-about" class="section about-preview bg-light">
         <div class="container">
             <h2 class="section-title">About Me</h2>
             <div class="about-preview-content fade-in">
                 <div class="about-image-container">
-                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDMwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIiByeD0iMTUwIiBmaWxsPSIjNjY3ZWVhIi8+Cjx0ZXh0IHg9IjE1MCIgeT0iMTYwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1zaXplPSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iYm9sZCI+QVM8L3RleHQ+Cjwvc3ZnPg==" alt="Ashwani Singh" class="profile-image">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDMwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIiByeD0iMTUwIiBmaWxsPSIjNjY3ZWVhIi8+Cjx0ZXh0IHg9IjE1MCIgeT0iMTYwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1zaXplPSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iYm9sZCI+QVM8L3RleHQ+Cjwvc3ZnPg==" alt="Ashwani Singh Profile" class="profile-image">
                 </div>
                 <div class="about-text">
                     <h3>Welcome to My Portfolio!</h3>
@@ -62,7 +67,7 @@
                     <p>I am co-friendly by nature and excel at clear one-to-one communications. My goal is to work with progressive organizations where I can utilize my technical knowledge and skills for mutual growth.</p>
                     
                     <div class="cta-buttons">
-                        <a href="about.html" class="btn-primary">Learn More About Me</a>
+                        <a href="about.html" class="btn btn-primary">Learn More About Me</a>
                     </div>
                 </div>
             </div>
@@ -73,86 +78,71 @@
     <section id="skills-preview" class="section skills-preview">
         <div class="container">
             <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card fade-in">
+            <div class="skills-grid grid-responsive">
+                <div class="skill-card card fade-in">
                     <i class="fab fa-html5"></i>
                     <h4>Frontend Development</h4>
                     <p>HTML5, CSS3, JavaScript, React, Bootstrap</p>
                 </div>
-                <div class="skill-card fade-in">
+                <div class="skill-card card fade-in">
                     <i class="fas fa-server"></i>
                     <h4>Backend Development</h4>
                     <p>PHP, Python, MySQL, Database Management</p>
                 </div>
-                <div class="skill-card fade-in">
+                <div class="skill-card card fade-in">
                     <i class="fas fa-code"></i>
                     <h4>Programming</h4>
                     <p>Modern JavaScript, ES6+, Clean Code Practices</p>
                 </div>
-                <div class="skill-card fade-in">
+                <div class="skill-card card fade-in">
                     <i class="fas fa-mobile-alt"></i>
                     <h4>Responsive Design</h4>
                     <p>Mobile-first approach, Cross-browser compatibility</p>
                 </div>
             </div>
             <div class="section-cta">
-                <a href="skills.html" class="btn-primary">View All Skills</a>
+                <a href="skills.html" class="btn btn-primary">View All Skills</a>
             </div>
         </div>
     </section>
 
+    <!-- Certificates Preview -->
+    <section id="cert-preview" class="section certificates-preview bg-light">
+        <div class="container">
+            <h2 class="section-title">Certificates & Achievements</h2>
+            <p class="text-center text-muted mb-4">These certificates showcase my verified skills and milestones in web development, design, and related technologies.</p>
 
-<!-- Certificates Section -->
-<section id="cert-section">
-  <div class="cert-container">
-    <h1 class="cert-heading">Certificates & Achievements</h1>
-    <p class="cert-intro">
-      These certificates showcase my verified skills and milestones 
-      in web development, design, and related technologies.
-    </p>
+            <div class="certificates-grid grid-3col">
+                <div class="cert-card card fade-in">
+                    <div class="cert-placeholder">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3 class="cert-title">HTML5 Certification</h3>
+                    <p class="cert-desc">Professional Web Development</p>
+                </div>
 
-    <div class="cert-grid">
-      <!-- Certificate Item -->
-      <div class="cert-card">
-        <img src="certificate1.jpg" alt="Certificate 1" class="cert-img">
-        <h3 class="cert-title">Web Development</h3>
-        <p class="cert-desc">Certified by XYZ Academy</p>
-      </div>
+                <div class="cert-card card fade-in">
+                    <div class="cert-placeholder">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3 class="cert-title">CSS3 & Responsive Design</h3>
+                    <p class="cert-desc">Advanced Styling Certification</p>
+                </div>
 
-      <div class="cert-card">
-        <img src="certificate2.jpg" alt="Certificate 2" class="cert-img">
-        <h3 class="cert-title">UI/UX Design</h3>
-        <p class="cert-desc">Certified by ABC Institute</p>
-      </div>
-
-      <div class="cert-card">
-        <img src="certificate3.jpg" alt="Certificate 3" class="cert-img">
-        <h3 class="cert-title">JavaScript Mastery</h3>
-        <p class="cert-desc">Certified by CodeHub</p>
-      </div>
-
-      <!-- Add more certificate cards up to 10 -->
-      <div class="cert-card">
-        <img src="certificate4.jpg" alt="Certificate 4" class="cert-img">
-        <h3 class="cert-title">ReactJS Advanced</h3>
-        <p class="cert-desc">Certified by LearnFast</p>
-      </div>
-
-      <div class="cert-card">
-        <img src="certificate5.jpg" alt="Certificate 5" class="cert-img">
-        <h3 class="cert-title">Node.js & Backend</h3>
-        <p class="cert-desc">Certified by DevAcademy</p>
-      </div>
-
-      <div class="cert-card">
-        <img src="certificate6.jpg" alt="Certificate 6" class="cert-img">
-        <h3 class="cert-title">Database Design</h3>
-        <p class="cert-desc">Certified by SQLPro</p>
-      </div>
-    </div>
-  </div>
-</section>
-
+                <div class="cert-card card fade-in">
+                    <div class="cert-placeholder">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <h3 class="cert-title">JavaScript Programming</h3>
+                    <p class="cert-desc">Modern Web Development</p>
+                </div>
+            </div>
+            
+            <div class="section-cta">
+                <a href="certificates.html" class="btn btn-primary">View All Certificates</a>
+            </div>
+        </div>
+    </section>
 
     <!-- Quick Contact -->
     <section id="quick-contact" class="section contact-preview">
@@ -171,8 +161,8 @@
                     </div>
                 </div>
                 <div class="cta-buttons">
-                    <a href="contact.html" class="btn-primary">Contact Me</a>
-                    <a href="resume.html" class="btn-secondary">View Resume</a>
+                    <a href="contact.html" class="btn btn-primary">Contact Me</a>
+                    <a href="resume.html" class="btn btn-secondary">View Resume</a>
                 </div>
             </div>
         </div>
@@ -201,16 +191,16 @@
                 <div class="footer-section">
                     <h4>Follow Me</h4>
                     <div class="social-links">
-                        <a href="https://www.instagram.com/cool_dude_ashwani/" target="_blank" class="social-link">
+                        <a href="https://www.instagram.com/cool_dude_ashwani/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/ashwani-singh-26084725b/" target="_blank" class="social-link">
+                        <a href="https://www.linkedin.com/in/ashwani-singh-26084725b/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="https://github.com/23ashwaniak" target="_blank" class="social-link">
+                        <a href="https://github.com/23ashwaniak" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="https://www.sololearn.com/Profile/18990334/?ref=app" target="_blank" class="social-link">
+                        <a href="https://www.sololearn.com/Profile/18990334/?ref=app" target="_blank" rel="noopener" class="social-link" aria-label="SoloLearn">
                             <i class="fas fa-graduation-cap"></i>
                         </a>
                     </div>
@@ -224,7 +214,7 @@
     </footer>
 
     <!-- Scroll to Top Button -->
-    <button class="scroll-to-top" id="scrollToTop">
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
         <i class="fas fa-arrow-up"></i>
     </button>
 

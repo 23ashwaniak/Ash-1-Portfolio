@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills - Ashwani Singh</title>
+    <meta name="description" content="Technical skills and expertise of Ashwani Singh in web development, programming languages, frameworks, and tools.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Progress Bar -->
-    <div class="progress-bar" id="progressBar"></div>
+    <div class="progress-bar" id="progressBar" aria-label="Page scroll progress"></div>
 
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="nav-container">
             <div class="logo">
-                <a href="index.html">AS</a>
+                <a href="index.html" aria-label="Ashwani Singh - Home">AS</a>
             </div>
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
@@ -25,30 +29,30 @@
                 <li><a href="certificates.html" class="nav-link">Certificates</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
-            <div class="mobile-menu">
+            <button class="mobile-menu" aria-label="Toggle mobile menu">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </nav>
 
     <!-- Page Header -->
-    <div class="page-header">
+    <header class="page-header bg-gradient">
         <div class="container">
             <h1>Technical Skills</h1>
             <p>Technologies and frameworks I work with to create amazing digital experiences</p>
         </div>
-    </div>
+    </header>
 
     <!-- Skills Section -->
-    <section class="skills-page">
+    <section class="skills-page section">
         <div class="container">
             <!-- Frontend Skills -->
             <div class="skill-category fade-in">
                 <h2>Frontend Development</h2>
-                <div class="skills-grid">
-                    <div class="skill-card">
+                <div class="skills-grid grid-responsive">
+                    <div class="skill-card card">
                         <div class="skill-icon">
                             <i class="fab fa-html5"></i>
                         </div>
@@ -59,12 +63,12 @@
                                 <div class="skill-bar">
                                     <div class="skill-progress" data-width="90%"></div>
                                 </div>
-                                <span>Advanced</span>
+                                <span class="skill-percentage">Advanced</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="skill-card">
+                    <div class="skill-card card">
                         <div class="skill-icon">
                             <i class="fab fa-css3-alt"></i>
                         </div>
@@ -75,12 +79,12 @@
                                 <div class="skill-bar">
                                     <div class="skill-progress" data-width="85%"></div>
                                 </div>
-                                <span>Advanced</span>
+                                <span class="skill-percentage">Advanced</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="skill-card">
+                    <div class="skill-card card">
                         <div class="skill-icon">
                             <i class="fab fa-js-square"></i>
                         </div>
@@ -91,12 +95,12 @@
                                 <div class="skill-bar">
                                     <div class="skill-progress" data-width="80%"></div>
                                 </div>
-                                <span>Intermediate</span>
+                                <span class="skill-percentage">Intermediate</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="skill-card">
+                    <div class="skill-card card">
                         <div class="skill-icon">
                             <i class="fab fa-react"></i>
                         </div>
@@ -107,12 +111,12 @@
                                 <div class="skill-bar">
                                     <div class="skill-progress" data-width="75%"></div>
                                 </div>
-                                <span>Intermediate</span>
+                                <span class="skill-percentage">Intermediate</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="skill-card">
+                    <div class="skill-card card">
                         <div class="skill-icon">
                             <i class="fab fa-bootstrap"></i>
                         </div>
@@ -123,7 +127,7 @@
                                 <div class="skill-bar">
                                     <div class="skill-progress" data-width="85%"></div>
                                 </div>
-                                <span>Advanced</span>
+                                <span class="skill-percentage">Advanced</span>
                             </div>
                         </div>
                     </div>
@@ -133,8 +137,8 @@
             <!-- Backend Skills -->
             <div class="skill-category fade-in">
                 <h2>Backend Development</h2>
-                <div class="skills-grid">
-                    <div class="skill-card">
+                <div class="skills-grid grid-responsive">
+                    <div class="skill-card card">
                         <div class="skill-icon">
                             <i class="fab fa-php"></i>
                         </div>
@@ -145,12 +149,12 @@
                                 <div class="skill-bar">
                                     <div class="skill-progress" data-width="70%"></div>
                                 </div>
-                                <span>Intermediate</span>
+                                <span class="skill-percentage">Intermediate</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="skill-card">
+                    <div class="skill-card card">
                         <div class="skill-icon">
                             <i class="fab fa-python"></i>
                         </div>
@@ -161,12 +165,12 @@
                                 <div class="skill-bar">
                                     <div class="skill-progress" data-width="75%"></div>
                                 </div>
-                                <span>Intermediate</span>
+                                <span class="skill-percentage">Intermediate</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="skill-card">
+                    <div class="skill-card card">
                         <div class="skill-icon">
                             <i class="fas fa-database"></i>
                         </div>
@@ -177,7 +181,7 @@
                                 <div class="skill-bar">
                                     <div class="skill-progress" data-width="80%"></div>
                                 </div>
-                                <span>Intermediate</span>
+                                <span class="skill-percentage">Intermediate</span>
                             </div>
                         </div>
                     </div>
@@ -187,8 +191,8 @@
             <!-- Tools & Technologies -->
             <div class="skill-category fade-in">
                 <h2>Tools & Technologies</h2>
-                <div class="skills-grid">
-                    <div class="skill-card">
+                <div class="skills-grid grid-responsive">
+                    <div class="skill-card card">
                         <div class="skill-icon">
                             <i class="fab fa-git-alt"></i>
                         </div>
@@ -199,12 +203,12 @@
                                 <div class="skill-bar">
                                     <div class="skill-progress" data-width="75%"></div>
                                 </div>
-                                <span>Intermediate</span>
+                                <span class="skill-percentage">Intermediate</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="skill-card">
+                    <div class="skill-card card">
                         <div class="skill-icon">
                             <i class="fas fa-code"></i>
                         </div>
@@ -215,12 +219,12 @@
                                 <div class="skill-bar">
                                     <div class="skill-progress" data-width="90%"></div>
                                 </div>
-                                <span>Advanced</span>
+                                <span class="skill-percentage">Advanced</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="skill-card">
+                    <div class="skill-card card">
                         <div class="skill-icon">
                             <i class="fas fa-mobile-alt"></i>
                         </div>
@@ -231,12 +235,12 @@
                                 <div class="skill-bar">
                                     <div class="skill-progress" data-width="85%"></div>
                                 </div>
-                                <span>Advanced</span>
+                                <span class="skill-percentage">Advanced</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="skill-card">
+                    <div class="skill-card card">
                         <div class="skill-icon">
                             <i class="fab fa-linux"></i>
                         </div>
@@ -247,7 +251,7 @@
                                 <div class="skill-bar">
                                     <div class="skill-progress" data-width="70%"></div>
                                 </div>
-                                <span>Intermediate</span>
+                                <span class="skill-percentage">Intermediate</span>
                             </div>
                         </div>
                     </div>
@@ -257,23 +261,23 @@
             <!-- Soft Skills -->
             <div class="skill-category fade-in">
                 <h2>Soft Skills</h2>
-                <div class="soft-skills-grid">
-                    <div class="soft-skill-item">
+                <div class="soft-skills-grid grid-responsive">
+                    <div class="soft-skill-item card text-center">
                         <i class="fas fa-comments"></i>
                         <h4>Communication</h4>
                         <p>Clear technical communication and collaborative problem-solving</p>
                     </div>
-                    <div class="soft-skill-item">
+                    <div class="soft-skill-item card text-center">
                         <i class="fas fa-puzzle-piece"></i>
                         <h4>Problem Solving</h4>
                         <p>Analytical thinking and creative solutions to complex challenges</p>
                     </div>
-                    <div class="soft-skill-item">
+                    <div class="soft-skill-item card text-center">
                         <i class="fas fa-clock"></i>
                         <h4>Time Management</h4>
                         <p>Efficient project planning and deadline management</p>
                     </div>
-                    <div class="soft-skill-item">
+                    <div class="soft-skill-item card text-center">
                         <i class="fas fa-lightbulb"></i>
                         <h4>Adaptability</h4>
                         <p>Quick learner with ability to adapt to new technologies</p>
@@ -282,12 +286,12 @@
             </div>
 
             <!-- Skills CTA -->
-            <div class="skills-cta fade-in">
+            <div class="skills-cta fade-in text-center">
                 <h3>Interested in Working Together?</h3>
                 <p>Let's discuss how these skills can help bring your project to life.</p>
                 <div class="cta-buttons">
-                    <a href="contact.html" class="btn-primary">Start a Project</a>
-                    <a href="certificates.html" class="btn-secondary">View Certificates</a>
+                    <a href="contact.html" class="btn btn-primary">Start a Project</a>
+                    <a href="certificates.html" class="btn btn-secondary">View Certificates</a>
                 </div>
             </div>
         </div>
@@ -309,13 +313,13 @@
                 <div class="footer-section">
                     <h4>Follow Me</h4>
                     <div class="social-links">
-                        <a href="https://www.instagram.com/cool_dude_ashwani/" target="_blank" class="social-link">
+                        <a href="https://www.instagram.com/cool_dude_ashwani/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/ashwani-singh-26084725b/" target="_blank" class="social-link">
+                        <a href="https://www.linkedin.com/in/ashwani-singh-26084725b/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="https://github.com/23ashwaniak" target="_blank" class="social-link">
+                        <a href="https://github.com/23ashwaniak" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
                             <i class="fab fa-github"></i>
                         </a>
                     </div>
@@ -329,7 +333,7 @@
     </footer>
 
     <!-- Scroll to Top Button -->
-    <button class="scroll-to-top" id="scrollToTop">
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
         <i class="fas fa-arrow-up"></i>
     </button>
 

@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Ashwani Singh</title>
+    <meta name="description" content="Learn more about Ashwani Singh - Aspiring Full Stack Developer, MCA student at TIT Bhopal, passionate about web development.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Progress Bar -->
-    <div class="progress-bar" id="progressBar"></div>
+    <div class="progress-bar" id="progressBar" aria-label="Page scroll progress"></div>
 
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="nav-container">
             <div class="logo">
-                <a href="index.html">AS</a>
+                <a href="index.html" aria-label="Ashwani Singh - Home">AS</a>
             </div>
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
@@ -25,31 +29,31 @@
                 <li><a href="certificates.html" class="nav-link">Certificates</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
-            <div class="mobile-menu">
+            <button class="mobile-menu" aria-label="Toggle mobile menu">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </nav>
 
     <!-- Page Header -->
-    <div class="page-header">
+    <header class="page-header bg-gradient">
         <div class="container">
             <h1>About Me</h1>
             <p>Get to know more about my journey and passion for web development</p>
         </div>
-    </div>
+    </header>
 
     <!-- About Section -->
-    <section class="about-page">
+    <section class="about-page section">
         <div class="container">
             <div class="about-content">
                 <div class="about-image-container">
-                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDMwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIiByeD0iMTUwIiBmaWxsPSIjNjY3ZWVhIi8+Cjx0ZXh0IHg9IjE1MCIgeT0iMTYwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1zaXplPSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iYm9sZCI+QVM8L3RleHQ+Cjwvc3ZnPg==" alt="Ashwani Singh" class="profile-image">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDMwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIiByeD0iMTUwIiBmaWxsPSIjNjY3ZWVhIi8+Cjx0ZXh0IHg9IjE1MCIgeT0iMTYwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1zaXplPSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iYm9sZCI+QVM8L3RleHQ+Cjwvc3ZnPg==" alt="Ashwani Singh Profile" class="profile-image">
                 </div>
 
-                <div class="about-text">
+                <div class="about-text fade-in">
                     <h2>Hi, I'm Ashwani Singh</h2>
                     <h3>Aspiring Full Stack Web Developer</h3>
                     
@@ -81,23 +85,23 @@
             <!-- Personal Values Section -->
             <section class="personal-values fade-in">
                 <h3>My Values & Approach</h3>
-                <div class="values-grid">
-                    <div class="value-card">
+                <div class="values-grid grid-2col">
+                    <div class="value-card card">
                         <i class="fas fa-lightbulb"></i>
                         <h4>Innovation</h4>
                         <p>I believe in embracing new technologies and finding creative solutions to complex problems.</p>
                     </div>
-                    <div class="value-card">
+                    <div class="value-card card">
                         <i class="fas fa-users"></i>
                         <h4>Collaboration</h4>
                         <p>Co-friendly by nature, I excel at clear communication and teamwork in diverse environments.</p>
                     </div>
-                    <div class="value-card">
+                    <div class="value-card card">
                         <i class="fas fa-target"></i>
                         <h4>Quality</h4>
                         <p>Committed to writing clean, maintainable code and delivering exceptional user experiences.</p>
                     </div>
-                    <div class="value-card">
+                    <div class="value-card card">
                         <i class="fas fa-rocket"></i>
                         <h4>Growth</h4>
                         <p>Continuously learning and adapting to stay current with emerging technologies and best practices.</p>
@@ -137,13 +141,13 @@
             </section>
 
             <!-- Call to Action -->
-            <section class="about-cta fade-in">
+            <section class="about-cta fade-in text-center">
                 <div class="cta-content">
                     <h3>Let's Work Together</h3>
                     <p>I'm always excited to collaborate on interesting projects and explore new opportunities in web development.</p>
                     <div class="cta-buttons">
-                        <a href="contact.html" class="btn-primary">Get In Touch</a>
-                        <a href="resume.html" class="btn-secondary">View My Resume</a>
+                        <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+                        <a href="resume.html" class="btn btn-secondary">View My Resume</a>
                     </div>
                 </div>
             </section>
@@ -166,13 +170,13 @@
                 <div class="footer-section">
                     <h4>Follow Me</h4>
                     <div class="social-links">
-                        <a href="https://www.instagram.com/cool_dude_ashwani/" target="_blank" class="social-link">
+                        <a href="https://www.instagram.com/cool_dude_ashwani/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/ashwani-singh-26084725b/" target="_blank" class="social-link">
+                        <a href="https://www.linkedin.com/in/ashwani-singh-26084725b/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="https://github.com/23ashwaniak" target="_blank" class="social-link">
+                        <a href="https://github.com/23ashwaniak" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
                             <i class="fab fa-github"></i>
                         </a>
                     </div>
@@ -186,7 +190,7 @@
     </footer>
 
     <!-- Scroll to Top Button -->
-    <button class="scroll-to-top" id="scrollToTop">
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
         <i class="fas fa-arrow-up"></i>
     </button>
 
