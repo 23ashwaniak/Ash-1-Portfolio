@@ -1,342 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills - Ashwani Singh</title>
-    <meta name="description" content="Technical skills and expertise of Ashwani Singh in web development, programming languages, frameworks, and tools.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills - Ashwani Singh</title>
+  <meta name="description" content="Technical skills and expertise of Ashwani Singh in web development, programming languages, frameworks, and tools." />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <!-- Progress Bar -->
-    <div class="progress-bar" id="progressBar" aria-label="Page scroll progress"></div>
+  <!-- Progress Bar -->
+  <div class="progress-bar" id="progressBar" aria-label="Page scroll progress"></div>
 
-    <!-- Navigation -->
-    <nav class="navbar" role="navigation" aria-label="Main navigation">
-        <div class="nav-container">
-            <div class="logo">
-                <a href="index.html" aria-label="Ashwani Singh - Home">AS</a>
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="index.html" aria-label="Ashwani Singh - Home">AS</a>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="skills.html" class="nav-link active">Skills</a></li>
+        <li><a href="resume.html" class="nav-link">Resume</a></li>
+        <li><a href="certificates.html" class="nav-link">Certificates</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="mobile-menu" aria-label="Toggle mobile menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header bg-gradient">
+    <div class="container">
+      <h1>Technical Skills</h1>
+      <p>Technologies and frameworks I use to build scalable and user-friendly applications</p>
+    </div>
+  </header>
+
+  <!-- Skills Section -->
+  <main class="skills-page section">
+    <div class="container">
+
+      <!-- Frontend -->
+      <section class="skill-category fade-in">
+        <h2>Frontend Development</h2>
+        <div class="skills-grid grid-responsive">
+
+          <article class="skill-card card">
+            <i class="fab fa-html5 skill-icon"></i>
+            <div class="skill-info">
+              <h4>HTML5</h4>
+              <p>Semantic markup, accessibility, and modern standards for structured web content.</p>
+              <div class="skill-level">
+                <div class="skill-bar"><div class="skill-progress" data-width="90%"></div></div>
+                <span>Advanced</span>
+              </div>
             </div>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="skills.html" class="nav-link active">Skills</a></li>
-                <li><a href="resume.html" class="nav-link">Resume</a></li>
-                <li><a href="certificates.html" class="nav-link">Certificates</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-            <button class="mobile-menu" aria-label="Toggle mobile menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+          </article>
+
+          <article class="skill-card card">
+            <i class="fab fa-css3-alt skill-icon"></i>
+            <div class="skill-info">
+              <h4>CSS3</h4>
+              <p>Advanced styling, animations, flexbox, grid, and responsive design.</p>
+              <div class="skill-level">
+                <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
+                <span>Advanced</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="skill-card card">
+            <i class="fab fa-js-square skill-icon"></i>
+            <div class="skill-info">
+              <h4>JavaScript</h4>
+              <p>ES6+, DOM manipulation, async programming, and event-driven logic.</p>
+              <div class="skill-level">
+                <div class="skill-bar"><div class="skill-progress" data-width="80%"></div></div>
+                <span>Intermediate</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="skill-card card">
+            <i class="fab fa-react skill-icon"></i>
+            <div class="skill-info">
+              <h4>React</h4>
+              <p>Component-based UI, hooks, state management, and dynamic interfaces.</p>
+              <div class="skill-level">
+                <div class="skill-bar"><div class="skill-progress" data-width="75%"></div></div>
+                <span>Intermediate</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="skill-card card">
+            <i class="fab fa-bootstrap skill-icon"></i>
+            <div class="skill-info">
+              <h4>Bootstrap</h4>
+              <p>Responsive framework for fast, mobile-first UI development.</p>
+              <div class="skill-level">
+                <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
+                <span>Advanced</span>
+              </div>
+            </div>
+          </article>
+
         </div>
-    </nav>
+      </section>
 
-    <!-- Page Header -->
-    <header class="page-header bg-gradient">
-        <div class="container">
-            <h1>Technical Skills</h1>
-            <p>Technologies and frameworks I work with to create amazing digital experiences</p>
+      <!-- Backend -->
+      <section class="skill-category fade-in">
+        <h2>Backend Development</h2>
+        <div class="skills-grid grid-responsive">
+
+          <article class="skill-card card">
+            <i class="fab fa-php skill-icon"></i>
+            <div class="skill-info">
+              <h4>PHP</h4>
+              <p>Server-side scripting, API development, and backend logic.</p>
+              <div class="skill-level">
+                <div class="skill-bar"><div class="skill-progress" data-width="70%"></div></div>
+                <span>Intermediate</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="skill-card card">
+            <i class="fab fa-python skill-icon"></i>
+            <div class="skill-info">
+              <h4>Python</h4>
+              <p>Web development, automation, and data processing.</p>
+              <div class="skill-level">
+                <div class="skill-bar"><div class="skill-progress" data-width="75%"></div></div>
+                <span>Intermediate</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="skill-card card">
+            <i class="fas fa-database skill-icon"></i>
+            <div class="skill-info">
+              <h4>MySQL</h4>
+              <p>Database design, optimization, and query management.</p>
+              <div class="skill-level">
+                <div class="skill-bar"><div class="skill-progress" data-width="80%"></div></div>
+                <span>Intermediate</span>
+              </div>
+            </div>
+          </article>
+
         </div>
-    </header>
+      </section>
 
-    <!-- Skills Section -->
-    <section class="skills-page section">
-        <div class="container">
-            <!-- Frontend Skills -->
-            <div class="skill-category fade-in">
-                <h2>Frontend Development</h2>
-                <div class="skills-grid grid-responsive">
-                    <div class="skill-card card">
-                        <div class="skill-icon">
-                            <i class="fab fa-html5"></i>
-                        </div>
-                        <div class="skill-info">
-                            <h4>HTML5</h4>
-                            <p>Semantic markup, accessibility best practices, and modern web standards for creating structured web content.</p>
-                            <div class="skill-level">
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="90%"></div>
-                                </div>
-                                <span class="skill-percentage">Advanced</span>
-                            </div>
-                        </div>
-                    </div>
+      <!-- Tools -->
+      <section class="skill-category fade-in">
+        <h2>Tools & Technologies</h2>
+        <div class="skills-grid grid-responsive">
 
-                    <div class="skill-card card">
-                        <div class="skill-icon">
-                            <i class="fab fa-css3-alt"></i>
-                        </div>
-                        <div class="skill-info">
-                            <h4>CSS3</h4>
-                            <p>Advanced styling, animations, flexbox, grid, and responsive design with modern CSS techniques.</p>
-                            <div class="skill-level">
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="85%"></div>
-                                </div>
-                                <span class="skill-percentage">Advanced</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-card card">
-                        <div class="skill-icon">
-                            <i class="fab fa-js-square"></i>
-                        </div>
-                        <div class="skill-info">
-                            <h4>JavaScript</h4>
-                            <p>ES6+ modern JavaScript, DOM manipulation, async programming, and event handling.</p>
-                            <div class="skill-level">
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="80%"></div>
-                                </div>
-                                <span class="skill-percentage">Intermediate</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-card card">
-                        <div class="skill-icon">
-                            <i class="fab fa-react"></i>
-                        </div>
-                        <div class="skill-info">
-                            <h4>React</h4>
-                            <p>Component-based architecture, hooks, state management, and building interactive UIs.</p>
-                            <div class="skill-level">
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="75%"></div>
-                                </div>
-                                <span class="skill-percentage">Intermediate</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-card card">
-                        <div class="skill-icon">
-                            <i class="fab fa-bootstrap"></i>
-                        </div>
-                        <div class="skill-info">
-                            <h4>Bootstrap</h4>
-                            <p>Responsive framework for rapid UI development and mobile-first design.</p>
-                            <div class="skill-level">
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="85%"></div>
-                                </div>
-                                <span class="skill-percentage">Advanced</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <article class="skill-card card">
+            <i class="fab fa-git-alt skill-icon"></i>
+            <div class="skill-info">
+              <h4>Git & Version Control</h4>
+              <p>Branching, merging, and collaborative development.</p>
+              <div class="skill-level">
+                <div class="skill-bar"><div class="skill-progress" data-width="75%"></div></div>
+                <span>Intermediate</span>
+              </div>
             </div>
+          </article>
 
-            <!-- Backend Skills -->
-            <div class="skill-category fade-in">
-                <h2>Backend Development</h2>
-                <div class="skills-grid grid-responsive">
-                    <div class="skill-card card">
-                        <div class="skill-icon">
-                            <i class="fab fa-php"></i>
-                        </div>
-                        <div class="skill-info">
-                            <h4>PHP</h4>
-                            <p>Server-side programming, API development, and backend logic implementation.</p>
-                            <div class="skill-level">
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="70%"></div>
-                                </div>
-                                <span class="skill-percentage">Intermediate</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-card card">
-                        <div class="skill-icon">
-                            <i class="fab fa-python"></i>
-                        </div>
-                        <div class="skill-info">
-                            <h4>Python</h4>
-                            <p>High-level programming for web applications, automation, and data processing.</p>
-                            <div class="skill-level">
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="75%"></div>
-                                </div>
-                                <span class="skill-percentage">Intermediate</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-card card">
-                        <div class="skill-icon">
-                            <i class="fas fa-database"></i>
-                        </div>
-                        <div class="skill-info">
-                            <h4>MySQL</h4>
-                            <p>Database design, optimization, queries, and data management for web applications.</p>
-                            <div class="skill-level">
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="80%"></div>
-                                </div>
-                                <span class="skill-percentage">Intermediate</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <article class="skill-card card">
+            <i class="fas fa-code skill-icon"></i>
+            <div class="skill-info">
+              <h4>VS Code</h4>
+              <p>Feature-rich coding environment with extensions.</p>
+              <div class="skill-level">
+                <div class="skill-bar"><div class="skill-progress" data-width="90%"></div></div>
+                <span>Advanced</span>
+              </div>
             </div>
+          </article>
 
-            <!-- Tools & Technologies -->
-            <div class="skill-category fade-in">
-                <h2>Tools & Technologies</h2>
-                <div class="skills-grid grid-responsive">
-                    <div class="skill-card card">
-                        <div class="skill-icon">
-                            <i class="fab fa-git-alt"></i>
-                        </div>
-                        <div class="skill-info">
-                            <h4>Git & Version Control</h4>
-                            <p>Source code management, branching, merging, and collaborative development.</p>
-                            <div class="skill-level">
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="75%"></div>
-                                </div>
-                                <span class="skill-percentage">Intermediate</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-card card">
-                        <div class="skill-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <div class="skill-info">
-                            <h4>VS Code</h4>
-                            <p>Professional development environment with extensions and productivity tools.</p>
-                            <div class="skill-level">
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="90%"></div>
-                                </div>
-                                <span class="skill-percentage">Advanced</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-card card">
-                        <div class="skill-icon">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <div class="skill-info">
-                            <h4>Responsive Design</h4>
-                            <p>Mobile-first approach, cross-browser compatibility, and adaptive layouts.</p>
-                            <div class="skill-level">
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="85%"></div>
-                                </div>
-                                <span class="skill-percentage">Advanced</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-card card">
-                        <div class="skill-icon">
-                            <i class="fab fa-linux"></i>
-                        </div>
-                        <div class="skill-info">
-                            <h4>Linux/Windows</h4>
-                            <p>Operating system proficiency, command line interface, and system administration.</p>
-                            <div class="skill-level">
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="70%"></div>
-                                </div>
-                                <span class="skill-percentage">Intermediate</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <article class="skill-card card">
+            <i class="fas fa-mobile-alt skill-icon"></i>
+            <div class="skill-info">
+              <h4>Responsive Design</h4>
+              <p>Cross-browser compatibility and mobile-first layouts.</p>
+              <div class="skill-level">
+                <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
+                <span>Advanced</span>
+              </div>
             </div>
+          </article>
 
-            <!-- Soft Skills -->
-            <div class="skill-category fade-in">
-                <h2>Soft Skills</h2>
-                <div class="soft-skills-grid grid-responsive">
-                    <div class="soft-skill-item card text-center">
-                        <i class="fas fa-comments"></i>
-                        <h4>Communication</h4>
-                        <p>Clear technical communication and collaborative problem-solving</p>
-                    </div>
-                    <div class="soft-skill-item card text-center">
-                        <i class="fas fa-puzzle-piece"></i>
-                        <h4>Problem Solving</h4>
-                        <p>Analytical thinking and creative solutions to complex challenges</p>
-                    </div>
-                    <div class="soft-skill-item card text-center">
-                        <i class="fas fa-clock"></i>
-                        <h4>Time Management</h4>
-                        <p>Efficient project planning and deadline management</p>
-                    </div>
-                    <div class="soft-skill-item card text-center">
-                        <i class="fas fa-lightbulb"></i>
-                        <h4>Adaptability</h4>
-                        <p>Quick learner with ability to adapt to new technologies</p>
-                    </div>
-                </div>
+          <article class="skill-card card">
+            <i class="fab fa-linux skill-icon"></i>
+            <div class="skill-info">
+              <h4>Linux / Windows</h4>
+              <p>System administration and CLI proficiency.</p>
+              <div class="skill-level">
+                <div class="skill-bar"><div class="skill-progress" data-width="70%"></div></div>
+                <span>Intermediate</span>
+              </div>
             </div>
+          </article>
 
-            <!-- Skills CTA -->
-            <div class="skills-cta fade-in text-center">
-                <h3>Interested in Working Together?</h3>
-                <p>Let's discuss how these skills can help bring your project to life.</p>
-                <div class="cta-buttons">
-                    <a href="contact.html" class="btn btn-primary">Start a Project</a>
-                    <a href="certificates.html" class="btn btn-secondary">View Certificates</a>
-                </div>
-            </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <a href="about.html">About</a>
-                    <a href="skills.html">Skills</a>
-                    <a href="resume.html">Resume</a>
-                    <a href="certificates.html">Certificates</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Follow Me</h4>
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/cool_dude_ashwani/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/ashwani-singh-26084725b/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://github.com/23ashwaniak" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2024 Ashwani Singh. All rights reserved.</p>
-            </div>
+      <!-- Soft Skills -->
+      <section class="skill-category fade-in">
+        <h2>Soft Skills</h2>
+        <div class="soft-skills-grid grid-responsive">
+          <div class="soft-skill-item card text-center">
+            <i class="fas fa-comments"></i>
+            <h4>Communication</h4>
+            <p>Clear technical communication and teamwork</p>
+          </div>
+          <div class="soft-skill-item card text-center">
+            <i class="fas fa-puzzle-piece"></i>
+            <h4>Problem Solving</h4>
+            <p>Analytical and creative approach to challenges</p>
+          </div>
+          <div class="soft-skill-item card text-center">
+            <i class="fas fa-clock"></i>
+            <h4>Time Management</h4>
+            <p>Planning and meeting deadlines effectively</p>
+          </div>
+          <div class="soft-skill-item card text-center">
+            <i class="fas fa-lightbulb"></i>
+            <h4>Adaptability</h4>
+            <p>Quick learner with ability to adopt new tech</p>
+          </div>
         </div>
-    </footer>
+      </section>
 
-    <!-- Scroll to Top Button -->
-    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+      <!-- CTA -->
+      <section class="skills-cta fade-in text-center">
+        <h3>Interested in Working Together?</h3>
+        <p>Let's discuss how my skills can help bring your project to life.</p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn btn-primary">Start a Project</a>
+          <a href="certificates.html" class="btn btn-secondary">View Certificates</a>
+        </div>
+      </section>
+    </div>
+  </main>
 
-    <script src="app.js"></script>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <a href="about.html">About</a>
+          <a href="skills.html">Skills</a>
+          <a href="resume.html">Resume</a>
+          <a href="certificates.html">Certificates</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-section">
+          <h4>Follow Me</h4>
+          <div class="social-links">
+            <a href="https://www.instagram.com/cool_dude_ashwani/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/ashwani-singh-26084725b/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/23ashwaniak" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Ashwani Singh. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
 </body>
 </html>

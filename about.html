@@ -1,199 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Ashwani Singh</title>
-    <meta name="description" content="Learn more about Ashwani Singh - Aspiring Full Stack Developer, MCA student at TIT Bhopal, passionate about web development.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Ashwani Singh</title>
+  <meta name="description" content="Learn more about Ashwani Singh - Aspiring Full Stack Developer, MCA student at TIT Bhopal, passionate about web development.">
+  <meta name="keywords" content="Ashwani Singh, About, Full Stack Developer, Portfolio, Web Development, MCA, Bhopal">
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:title" content="About - Ashwani Singh">
+  <meta property="og:description" content="Discover Ashwani Singh’s journey, values, and passion for full stack web development.">
+  <meta property="og:image" content="assets/profile.jpg">
+  <meta property="og:url" content="https://yourdomain.com/about.html">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <!-- Progress Bar -->
-    <div class="progress-bar" id="progressBar" aria-label="Page scroll progress"></div>
+  <!-- Skip to Content -->
+  <a href="#about-page" class="skip-to-content">Skip to main content</a>
 
-    <!-- Navigation -->
-    <nav class="navbar" role="navigation" aria-label="Main navigation">
-        <div class="nav-container">
-            <div class="logo">
-                <a href="index.html" aria-label="Ashwani Singh - Home">AS</a>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link active">About</a></li>
-                <li><a href="skills.html" class="nav-link">Skills</a></li>
-                <li><a href="resume.html" class="nav-link">Resume</a></li>
-                <li><a href="certificates.html" class="nav-link">Certificates</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-            <button class="mobile-menu" aria-label="Toggle mobile menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+  <!-- Progress Bar -->
+  <div class="progress-bar" id="progressBar" aria-label="Page scroll progress"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="index.html" aria-label="Ashwani Singh - Home">AS</a>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link active">About</a></li>
+        <li><a href="skills.html" class="nav-link">Skills</a></li>
+        <li><a href="resume.html" class="nav-link">Resume</a></li>
+        <li><a href="certificates.html" class="nav-link">Certificates</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="mobile-menu" aria-label="Toggle mobile menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Dark/Light Mode Toggle -->
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header bg-gradient">
+    <div class="container">
+      <h1>About Me</h1>
+      <p>Get to know more about my journey and passion for web development</p>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about-page" class="about-page section">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-image-container">
+          <img src="assets/profile.jpg" alt="Ashwani Singh Profile" class="profile-image" loading="lazy">
         </div>
-    </nav>
 
-    <!-- Page Header -->
-    <header class="page-header bg-gradient">
-        <div class="container">
-            <h1>About Me</h1>
-            <p>Get to know more about my journey and passion for web development</p>
+        <div class="about-text fade-in">
+          <h2>Hi, I'm Ashwani Singh</h2>
+          <h3>Aspiring Full Stack Web Developer</h3>
+          <p>I am passionate about creating innovative and user-friendly web applications. Currently pursuing Master's in Computer Applications (MCA) at Technocrat Institute of Technology, Bhopal, I bring dedication and enthusiasm to every project I undertake.</p>
+          <p>Originally from Alwar district, Rajasthan, I bring a unique perspective to problem-solving and am always eager to learn new technologies and frameworks. My journey in technology started with curiosity and has evolved into a deep passion for creating digital solutions that make a difference.</p>
+
+          <div class="quick-facts">
+            <div class="fact-item"><i class="fas fa-map-marker-alt"></i> <span>Based in Bhopal, MP</span></div>
+            <div class="fact-item"><i class="fas fa-graduation-cap"></i> <span>MCA Student at TIT Bhopal</span></div>
+            <div class="fact-item"><i class="fas fa-code"></i> <span>Full Stack Developer</span></div>
+            <div class="fact-item"><i class="fas fa-heart"></i> <span>Passionate about Clean Code</span></div>
+          </div>
         </div>
-    </header>
+      </div>
 
-    <!-- About Section -->
-    <section class="about-page section">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-image-container">
-                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDMwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIiByeD0iMTUwIiBmaWxsPSIjNjY3ZWVhIi8+Cjx0ZXh0IHg9IjE1MCIgeT0iMTYwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1zaXplPSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iYm9sZCI+QVM8L3RleHQ+Cjwvc3ZnPg==" alt="Ashwani Singh Profile" class="profile-image">
-                </div>
-
-                <div class="about-text fade-in">
-                    <h2>Hi, I'm Ashwani Singh</h2>
-                    <h3>Aspiring Full Stack Web Developer</h3>
-                    
-                    <p>I am passionate about creating innovative and user-friendly web applications. Currently pursuing Master's in Computer Applications (MCA) at Technocrat Institute of Technology, Bhopal, I bring dedication and enthusiasm to every project I undertake.</p>
-                    
-                    <p>Originally from Alwar district, Rajasthan, I bring a unique perspective to problem-solving and am always eager to learn new technologies and frameworks. My journey in technology started with curiosity and has evolved into a deep passion for creating digital solutions that make a difference.</p>
-
-                    <div class="quick-facts">
-                        <div class="fact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Based in Bhopal, MP</span>
-                        </div>
-                        <div class="fact-item">
-                            <i class="fas fa-graduation-cap"></i>
-                            <span>MCA Student at TIT Bhopal</span>
-                        </div>
-                        <div class="fact-item">
-                            <i class="fas fa-code"></i>
-                            <span>Full Stack Developer</span>
-                        </div>
-                        <div class="fact-item">
-                            <i class="fas fa-heart"></i>
-                            <span>Passionate about Clean Code</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Personal Values Section -->
-            <section class="personal-values fade-in">
-                <h3>My Values & Approach</h3>
-                <div class="values-grid grid-2col">
-                    <div class="value-card card">
-                        <i class="fas fa-lightbulb"></i>
-                        <h4>Innovation</h4>
-                        <p>I believe in embracing new technologies and finding creative solutions to complex problems.</p>
-                    </div>
-                    <div class="value-card card">
-                        <i class="fas fa-users"></i>
-                        <h4>Collaboration</h4>
-                        <p>Co-friendly by nature, I excel at clear communication and teamwork in diverse environments.</p>
-                    </div>
-                    <div class="value-card card">
-                        <i class="fas fa-target"></i>
-                        <h4>Quality</h4>
-                        <p>Committed to writing clean, maintainable code and delivering exceptional user experiences.</p>
-                    </div>
-                    <div class="value-card card">
-                        <i class="fas fa-rocket"></i>
-                        <h4>Growth</h4>
-                        <p>Continuously learning and adapting to stay current with emerging technologies and best practices.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Journey Section -->
-            <section class="journey-section fade-in">
-                <h3>My Journey</h3>
-                <div class="journey-timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h4>2024 - Present</h4>
-                            <h5>Master's in Computer Applications</h5>
-                            <p>Currently pursuing MCA at Technocrat Institute of Technology, Bhopal, focusing on full-stack web development and modern programming practices.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h4>2022</h4>
-                            <h5>Bachelor's in Computer Applications</h5>
-                            <p>Completed BCA from Govt. PG College, Panchkula with 76.02%, building a strong foundation in computer science and programming.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h4>2019 - 2022</h4>
-                            <h5>Skill Development</h5>
-                            <p>Intensive learning phase focusing on web technologies, earning certifications in HTML, CSS, JavaScript, React, and Python.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Call to Action -->
-            <section class="about-cta fade-in text-center">
-                <div class="cta-content">
-                    <h3>Let's Work Together</h3>
-                    <p>I'm always excited to collaborate on interesting projects and explore new opportunities in web development.</p>
-                    <div class="cta-buttons">
-                        <a href="contact.html" class="btn btn-primary">Get In Touch</a>
-                        <a href="resume.html" class="btn btn-secondary">View My Resume</a>
-                    </div>
-                </div>
-            </section>
+      <!-- Personal Values Section -->
+      <section class="personal-values fade-in">
+        <h3>My Values & Approach</h3>
+        <div class="values-grid grid-2col">
+          <div class="value-card card">
+            <i class="fas fa-lightbulb"></i>
+            <h4>Innovation</h4>
+            <p>I believe in embracing new technologies and finding creative solutions to complex problems.</p>
+          </div>
+          <div class="value-card card">
+            <i class="fas fa-users"></i>
+            <h4>Collaboration</h4>
+            <p>Co-friendly by nature, I excel at clear communication and teamwork in diverse environments.</p>
+          </div>
+          <div class="value-card card">
+            <i class="fas fa-target"></i>
+            <h4>Quality</h4>
+            <p>Committed to writing clean, maintainable code and delivering exceptional user experiences.</p>
+          </div>
+          <div class="value-card card">
+            <i class="fas fa-rocket"></i>
+            <h4>Growth</h4>
+            <p>Continuously learning and adapting to stay current with emerging technologies and best practices.</p>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <a href="about.html">About</a>
-                    <a href="skills.html">Skills</a>
-                    <a href="resume.html">Resume</a>
-                    <a href="certificates.html">Certificates</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Follow Me</h4>
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/cool_dude_ashwani/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/ashwani-singh-26084725b/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://github.com/23ashwaniak" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                </div>
+      <!-- Journey Section -->
+      <section class="journey-section fade-in">
+        <h3>My Journey</h3>
+        <div class="journey-timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h4><time datetime="2024">2024 - Present</time></h4>
+              <h5>Master's in Computer Applications</h5>
+              <p>Currently pursuing MCA at Technocrat Institute of Technology, Bhopal, focusing on full-stack web development and modern programming practices.</p>
             </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2024 Ashwani Singh. All rights reserved.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h4><time datetime="2022">2022</time></h4>
+              <h5>Bachelor's in Computer Applications</h5>
+              <p>Completed BCA from Govt. PG College, Panchkula with 76.02%, building a strong foundation in computer science and programming.</p>
             </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h4><time datetime="2019">2019 - 2022</time></h4>
+              <h5>Skill Development</h5>
+              <p>Intensive learning phase focusing on web technologies, earning certifications in HTML, CSS, JavaScript, React, and Python.</p>
+            </div>
+          </div>
         </div>
-    </footer>
+      </section>
 
-    <!-- Scroll to Top Button -->
-    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+      <!-- Call to Action -->
+      <section class="about-cta fade-in text-center">
+        <div class="cta-content">
+          <h3>Let's Work Together</h3>
+          <p>I'm always excited to collaborate on interesting projects and explore new opportunities in web development.</p>
+          <div class="cta-buttons">
+            <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+            <a href="resume.html" class="btn btn-secondary">View My Resume</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
 
-    <script src="app.js"></script>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="resume.html">Resume</a>
+        <a href="certificates.html">Certificates</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Me</h4>
+        <div class="social-links">
+          <a href="https://www.instagram.com/cool_dude_ashwani/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/ashwani-singh-26084725b/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/23ashwaniak" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Ashwani Singh. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="app.js"></script>
+  <script>
+    // Dynamic Year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

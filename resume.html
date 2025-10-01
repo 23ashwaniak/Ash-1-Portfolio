@@ -1,309 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - Ashwani Singh</title>
-    <meta name="description" content="Professional resume of Ashwani Singh - Full Stack Developer with experience in web technologies and programming.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume - Ashwani Singh</title>
+  <meta name="description" content="Professional resume of Ashwani Singh - Full Stack Developer with experience in web technologies and programming." />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <!-- Progress Bar -->
-    <div class="progress-bar" id="progressBar" aria-label="Page scroll progress"></div>
+  <!-- Progress Bar -->
+  <div class="progress-bar" id="progressBar" aria-label="Page scroll progress"></div>
 
-    <!-- Navigation -->
-    <nav class="navbar" role="navigation" aria-label="Main navigation">
-        <div class="nav-container">
-            <div class="logo">
-                <a href="index.html" aria-label="Ashwani Singh - Home">AS</a>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="skills.html" class="nav-link">Skills</a></li>
-                <li><a href="resume.html" class="nav-link active">Resume</a></li>
-                <li><a href="certificates.html" class="nav-link">Certificates</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="index.html" aria-label="Ashwani Singh - Home">AS</a>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="skills.html" class="nav-link">Skills</a></li>
+        <li><a href="resume.html" class="nav-link active">Resume</a></li>
+        <li><a href="certificates.html" class="nav-link">Certificates</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="mobile-menu" aria-label="Toggle mobile menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header bg-gradient">
+    <div class="container">
+      <h1>My Resume</h1>
+      <p>Professional experience, education, and qualifications</p>
+    </div>
+  </header>
+
+  <!-- Resume Section -->
+  <main class="resume-page section">
+    <div class="container">
+
+      <!-- Resume Download -->
+      <section class="resume-download fade-in text-center">
+        <button class="btn btn-primary" id="downloadResume">
+          <i class="fas fa-download"></i> Download Resume PDF
+        </button>
+        <p class="text-muted">Last updated: December 2024</p>
+      </section>
+
+      <!-- Professional Summary -->
+      <section class="resume-section fade-in">
+        <h2><i class="fas fa-user"></i> Professional Summary</h2>
+        <p>Aspiring Full Stack Web Developer with a strong foundation in modern web technologies and a passion for creating user-friendly applications. Currently pursuing Master's in Computer Applications with hands-on experience in HTML5, CSS3, JavaScript, React, PHP, and MySQL. Known for clear communication, problem-solving abilities, and a commitment to writing clean, maintainable code.</p>
+      </section>
+
+      <!-- Education -->
+      <section class="resume-section fade-in">
+        <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+        <div class="resume-content">
+          <article class="education-item card">
+            <header class="education-header">
+              <h3>Master of Computer Application (M.C.A.)</h3>
+              <time class="date">2024 - Present</time>
+            </header>
+            <p class="institution">Technocrat Institute of Technology, Bhopal</p>
+            <p class="university">RGPV University, Madhya Pradesh</p>
+            <p class="grade">Current CGPA: 7.4</p>
+            <ul class="coursework">
+              <li>Advanced Programming Concepts</li>
+              <li>Web Technologies & Frameworks</li>
+              <li>Database Management Systems</li>
+              <li>Software Engineering</li>
             </ul>
-            <button class="mobile-menu" aria-label="Toggle mobile menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+          </article>
+
+          <article class="education-item card">
+            <header class="education-header">
+              <h3>Bachelor of Computer Application (B.C.A.)</h3>
+              <time class="date">2019 - 2022</time>
+            </header>
+            <p class="institution">Government PG College, Panchkula</p>
+            <p class="university">Kurukshetra University, Haryana</p>
+            <p class="grade">Percentage: 76.02%</p>
+          </article>
+
+          <article class="education-item card">
+            <header class="education-header">
+              <h3>Senior Secondary (12th)</h3>
+              <time class="date">2019</time>
+            </header>
+            <p class="institution">MLP Senior Secondary School, Dharuhera</p>
+            <p class="university">CBSE Board, Haryana</p>
+            <p class="grade">Percentage: 79.60%</p>
+          </article>
+
+          <article class="education-item card">
+            <header class="education-header">
+              <h3>Secondary (10th)</h3>
+              <time class="date">2017</time>
+            </header>
+            <p class="institution">MLP Senior Secondary School, Dharuhera</p>
+            <p class="university">CBSE Board, Haryana</p>
+            <p class="grade">CGPA: 9.8</p>
+          </article>
         </div>
-    </nav>
+      </section>
 
-    <!-- Page Header -->
-    <header class="page-header bg-gradient">
-        <div class="container">
-            <h1>My Resume</h1>
-            <p>Professional experience, education, and qualifications</p>
+      <!-- Technical Skills -->
+      <section class="resume-section fade-in">
+        <h2><i class="fas fa-code"></i> Technical Skills</h2>
+        <div class="skills-categories grid-3col">
+          <div class="skill-category-resume card">
+            <h4>Frontend</h4>
+            <div class="skill-tags">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript (ES6+)</span><span>React</span><span>Bootstrap</span><span>Responsive Design</span>
+            </div>
+          </div>
+          <div class="skill-category-resume card">
+            <h4>Backend</h4>
+            <div class="skill-tags">
+              <span>PHP</span><span>Python</span><span>MySQL</span><span>Database Design</span>
+            </div>
+          </div>
+          <div class="skill-category-resume card">
+            <h4>Tools</h4>
+            <div class="skill-tags">
+              <span>VS Code</span><span>Git</span><span>Linux</span><span>Windows</span><span>Chrome DevTools</span>
+            </div>
+          </div>
         </div>
-    </header>
+      </section>
 
-    <!-- Resume Section -->
-    <section class="resume-page section">
-        <div class="container">
-            <!-- Download Button -->
-            <div class="resume-download fade-in text-center">
-                <button class="btn btn-primary" id="downloadResume">
-                    <i class="fas fa-download"></i> Download Resume PDF
-                </button>
-                <p class="text-muted">Last updated: December 2024</p>
-            </div>
+      <!-- Projects -->
+      <section class="resume-section fade-in">
+        <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+        <article class="project-item card">
+          <h3>Personal Portfolio Website</h3>
+          <p class="project-tech">HTML5, CSS3, JavaScript, Responsive Design</p>
+          <ul>
+            <li>Built a responsive portfolio website showcasing skills and projects</li>
+            <li>Added smooth animations and interactive UI elements</li>
+            <li>Optimized for mobile devices and cross-browser compatibility</li>
+          </ul>
+        </article>
+        <article class="project-item card">
+          <h3>Web Development Practice Projects</h3>
+          <p class="project-tech">React, PHP, MySQL, Bootstrap</p>
+          <ul>
+            <li>Developed various web applications during coursework</li>
+            <li>Implemented CRUD operations with database integration</li>
+            <li>Focused on UX and clean coding practices</li>
+          </ul>
+        </article>
+      </section>
 
-            <!-- Professional Summary -->
-            <div class="resume-section fade-in">
-                <h2><i class="fas fa-user"></i> Professional Summary</h2>
-                <div class="resume-content">
-                    <p>Aspiring Full Stack Web Developer with a strong foundation in modern web technologies and a passion for creating user-friendly applications. Currently pursuing Master's in Computer Applications with hands-on experience in HTML5, CSS3, JavaScript, React, PHP, and MySQL. Known for clear communication, problem-solving abilities, and a commitment to writing clean, maintainable code.</p>
-                </div>
-            </div>
-
-            <!-- Education -->
-            <div class="resume-section fade-in">
-                <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-                <div class="resume-content">
-                    <div class="education-item card">
-                        <div class="education-header">
-                            <h3>Master of Computer Application (M.C.A.)</h3>
-                            <span class="date">2024 - Present</span>
-                        </div>
-                        <div class="institution">Technocrat Institute of Technology, Bhopal</div>
-                        <div class="university">RGPV University, Madhya Pradesh</div>
-                        <div class="grade">Current CGPA: 7.4</div>
-                        <ul class="coursework">
-                            <li>Advanced Programming Concepts</li>
-                            <li>Web Technologies & Frameworks</li>
-                            <li>Database Management Systems</li>
-                            <li>Software Engineering</li>
-                        </ul>
-                    </div>
-
-                    <div class="education-item card">
-                        <div class="education-header">
-                            <h3>Bachelor of Computer Application (B.C.A.)</h3>
-                            <span class="date">2019 - 2022</span>
-                        </div>
-                        <div class="institution">Government PG College, Panchkula</div>
-                        <div class="university">Kurukshetra University, Haryana</div>
-                        <div class="grade">Percentage: 76.02%</div>
-                        <ul class="coursework">
-                            <li>Programming Fundamentals (C, C++, Java)</li>
-                            <li>Data Structures & Algorithms</li>
-                            <li>Computer Networks</li>
-                            <li>Operating Systems</li>
-                        </ul>
-                    </div>
-
-                    <div class="education-item card">
-                        <div class="education-header">
-                            <h3>Senior Secondary (12th)</h3>
-                            <span class="date">2019</span>
-                        </div>
-                        <div class="institution">MLP Senior Secondary School, Dharuhera</div>
-                        <div class="university">CBSE Board, Haryana</div>
-                        <div class="grade">Percentage: 79.60%</div>
-                    </div>
-
-                    <div class="education-item card">
-                        <div class="education-header">
-                            <h3>Secondary (10th)</h3>
-                            <span class="date">2017</span>
-                        </div>
-                        <div class="institution">MLP Senior Secondary School, Dharuhera</div>
-                        <div class="university">CBSE Board, Haryana</div>
-                        <div class="grade">CGPA: 9.8</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Technical Skills -->
-            <div class="resume-section fade-in">
-                <h2><i class="fas fa-code"></i> Technical Skills</h2>
-                <div class="resume-content">
-                    <div class="skills-categories grid-3col">
-                        <div class="skill-category-resume card">
-                            <h4>Frontend Technologies</h4>
-                            <div class="skill-tags">
-                                <span class="skill-tag">HTML5</span>
-                                <span class="skill-tag">CSS3</span>
-                                <span class="skill-tag">JavaScript (ES6+)</span>
-                                <span class="skill-tag">React</span>
-                                <span class="skill-tag">Bootstrap</span>
-                                <span class="skill-tag">Responsive Design</span>
-                            </div>
-                        </div>
-                        <div class="skill-category-resume card">
-                            <h4>Backend Technologies</h4>
-                            <div class="skill-tags">
-                                <span class="skill-tag">PHP</span>
-                                <span class="skill-tag">Python</span>
-                                <span class="skill-tag">MySQL</span>
-                                <span class="skill-tag">Database Design</span>
-                            </div>
-                        </div>
-                        <div class="skill-category-resume card">
-                            <h4>Tools & Platforms</h4>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Visual Studio Code</span>
-                                <span class="skill-tag">Git</span>
-                                <span class="skill-tag">Linux</span>
-                                <span class="skill-tag">Windows</span>
-                                <span class="skill-tag">Chrome DevTools</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Projects -->
-            <div class="resume-section fade-in">
-                <h2><i class="fas fa-project-diagram"></i> Projects</h2>
-                <div class="resume-content">
-                    <div class="project-item card">
-                        <h3>Personal Portfolio Website</h3>
-                        <div class="project-tech">HTML5, CSS3, JavaScript, Responsive Design</div>
-                        <ul>
-                            <li>Developed a responsive portfolio website showcasing skills and projects</li>
-                            <li>Implemented smooth animations and interactive UI elements</li>
-                            <li>Optimized for mobile devices and cross-browser compatibility</li>
-                        </ul>
-                    </div>
-                    <div class="project-item card">
-                        <h3>Web Development Practice Projects</h3>
-                        <div class="project-tech">React, PHP, MySQL, Bootstrap</div>
-                        <ul>
-                            <li>Created various web applications during academic coursework</li>
-                            <li>Implemented CRUD operations with database integration</li>
-                            <li>Focused on user experience and clean code practices</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Certifications -->
-            <div class="resume-section fade-in">
-                <h2><i class="fas fa-certificate"></i> Certifications</h2>
-                <div class="resume-content">
-                    <div class="certifications-grid grid-3col">
-                        <div class="cert-item card text-center">
-                            <h4>HTML5 Certification</h4>
-                            <p>Comprehensive web markup and structure</p>
-                        </div>
-                        <div class="cert-item card text-center">
-                            <h4>CSS3 & Responsive Design</h4>
-                            <p>Advanced styling and mobile-first approach</p>
-                        </div>
-                        <div class="cert-item card text-center">
-                            <h4>JavaScript Programming</h4>
-                            <p>Modern ES6+ JavaScript development</p>
-                        </div>
-                        <div class="cert-item card text-center">
-                            <h4>React Development</h4>
-                            <p>Component-based UI development</p>
-                        </div>
-                        <div class="cert-item card text-center">
-                            <h4>Python Programming</h4>
-                            <p>High-level programming and automation</p>
-                        </div>
-                        <div class="cert-item card text-center">
-                            <h4>Web Development Fundamentals</h4>
-                            <p>Core web technologies and best practices</p>
-                        </div>
-                    </div>
-                    <div class="cert-link text-center">
-                        <a href="certificates.html" class="btn btn-secondary">View All Certificates</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Coding Platforms -->
-            <div class="resume-section fade-in">
-                <h2><i class="fas fa-code-branch"></i> Coding Platforms</h2>
-                <div class="resume-content">
-                    <div class="coding-platforms grid-2col">
-                        <a href="https://www.sololearn.com/Profile/18990334/?ref=app" target="_blank" rel="noopener" class="platform-card card">
-                            <i class="fas fa-graduation-cap"></i>
-                            <div class="platform-info">
-                                <h4>SoloLearn</h4>
-                                <p>Completed multiple programming courses</p>
-                            </div>
-                        </a>
-                        <a href="https://www.hackerrank.com/23ashwanisingh" target="_blank" rel="noopener" class="platform-card card">
-                            <i class="fab fa-hackerrank"></i>
-                            <div class="platform-info">
-                                <h4>HackerRank</h4>
-                                <p>Active problem solver and skill assessments</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Languages -->
-            <div class="resume-section fade-in">
-                <h2><i class="fas fa-language"></i> Languages</h2>
-                <div class="resume-content">
-                    <div class="languages grid-2col">
-                        <div class="language-item card text-center">
-                            <span class="language">Hindi</span>
-                            <span class="proficiency">Native</span>
-                        </div>
-                        <div class="language-item card text-center">
-                            <span class="language">English</span>
-                            <span class="proficiency">Professional</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <!-- Certifications -->
+      <section class="resume-section fade-in">
+        <h2><i class="fas fa-certificate"></i> Certifications</h2>
+        <div class="certifications-grid grid-3col">
+          <div class="cert-item card text-center"><h4>HTML5 Certification</h4><p>Web markup and structure</p></div>
+          <div class="cert-item card text-center"><h4>CSS3 & Responsive Design</h4><p>Advanced styling</p></div>
+          <div class="cert-item card text-center"><h4>JavaScript Programming</h4><p>ES6+ development</p></div>
+          <div class="cert-item card text-center"><h4>React Development</h4><p>Component-based UI</p></div>
+          <div class="cert-item card text-center"><h4>Python Programming</h4><p>High-level programming</p></div>
+          <div class="cert-item card text-center"><h4>Web Development Fundamentals</h4><p>Core web tech</p></div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <a href="about.html">About</a>
-                    <a href="skills.html">Skills</a>
-                    <a href="resume.html">Resume</a>
-                    <a href="certificates.html">Certificates</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Follow Me</h4>
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/cool_dude_ashwani/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/ashwani-singh-26084725b/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://github.com/23ashwaniak" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2024 Ashwani Singh. All rights reserved.</p>
-            </div>
+        <div class="cert-link text-center">
+          <a href="certificates.html" class="btn btn-secondary">View All Certificates</a>
         </div>
-    </footer>
+      </section>
 
-    <!-- Scroll to Top Button -->
-    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+      <!-- Coding Platforms -->
+      <section class="resume-section fade-in">
+        <h2><i class="fas fa-code-branch"></i> Coding Platforms</h2>
+        <div class="coding-platforms grid-2col">
+          <a href="https://www.sololearn.com/Profile/18990334/?ref=app" target="_blank" rel="noopener" class="platform-card card">
+            <i class="fas fa-graduation-cap"></i>
+            <div>
+              <h4>SoloLearn</h4>
+              <p>Completed multiple programming courses</p>
+            </div>
+          </a>
+          <a href="https://www.hackerrank.com/23ashwanisingh" target="_blank" rel="noopener" class="platform-card card">
+            <i class="fab fa-hackerrank"></i>
+            <div>
+              <h4>HackerRank</h4>
+              <p>Problem solving & skill assessments</p>
+            </div>
+          </a>
+        </div>
+      </section>
 
-    <script src="app.js"></script>
+      <!-- Languages -->
+      <section class="resume-section fade-in">
+        <h2><i class="fas fa-language"></i> Languages</h2>
+        <div class="languages grid-2col">
+          <div class="language-item card text-center">
+            <span class="language">Hindi</span>
+            <span class="proficiency">Native</span>
+          </div>
+          <div class="language-item card text-center">
+            <span class="language">English</span>
+            <span class="proficiency">Professional</span>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <a href="about.html">About</a>
+          <a href="skills.html">Skills</a>
+          <a href="resume.html">Resume</a>
+          <a href="certificates.html">Certificates</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-section">
+          <h4>Follow Me</h4>
+          <div class="social-links">
+            <a href="https://www.instagram.com/cool_dude_ashwani/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/ashwani-singh-26084725b/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/23ashwaniak" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Ashwani Singh. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
 </body>
 </html>

@@ -1,223 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashwani Singh - Full Stack Developer</title>
-    <meta name="description" content="Ashwani Singh - Aspiring Full Stack Web Developer with expertise in HTML5, CSS3, JavaScript, React, PHP, and MySQL.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashwani Singh - Full Stack Developer</title>
+  <meta name="description" content="Ashwani Singh - Aspiring Full Stack Web Developer skilled in HTML5, CSS3, JavaScript, React, PHP, and MySQL. Passionate about building innovative and user-friendly web applications.">
+  <meta name="keywords" content="Ashwani Singh, Full Stack Developer, Portfolio, Web Developer, HTML, CSS, JavaScript, React, PHP, MySQL">
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:title" content="Ashwani Singh - Full Stack Developer">
+  <meta property="og:description" content="Portfolio of Ashwani Singh, an aspiring full stack web developer passionate about modern web technologies.">
+  <meta property="og:image" content="assets/profile.jpg">
+  <meta property="og:url" content="https://yourdomain.com">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <!-- Progress Bar -->
-    <div class="progress-bar" id="progressBar" aria-label="Page scroll progress"></div>
+  <!-- Skip to Content -->
+  <a href="#home" class="skip-to-content">Skip to main content</a>
 
-    <!-- Navigation -->
-    <nav class="navbar" role="navigation" aria-label="Main navigation">
-        <div class="nav-container">
-            <div class="logo">
-                <a href="index.html" aria-label="Ashwani Singh - Home">AS</a>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link active">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="skills.html" class="nav-link">Skills</a></li>
-                <li><a href="resume.html" class="nav-link">Resume</a></li>
-                <li><a href="certificates.html" class="nav-link">Certificates</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-            <button class="mobile-menu" aria-label="Toggle mobile menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+  <!-- Progress Bar -->
+  <div class="progress-bar" id="progressBar" aria-label="Page scroll progress"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="index.html" aria-label="Ashwani Singh - Home">AS</a>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certificates" class="nav-link">Certificates</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="mobile-menu" aria-label="Toggle mobile menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Dark/Light Mode Toggle -->
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <h1>Hi, I'm Ashwani Singh</h1>
+      <p class="subtitle"><span id="typing"></span></p>
+      <p class="description">Passionate about creating innovative and user-friendly web applications. Currently pursuing Master's in Computer Applications with a focus on modern web technologies and clean, maintainable code.</p>
+      <div class="cta-buttons">
+        <a href="#about" class="btn btn-primary">Learn More</a>
+        <a href="#resume" class="btn btn-secondary">View Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section bg-light">
+    <div class="container about-container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <img src="assets/profile.jpg" alt="Ashwani Singh Profile" class="profile-image" loading="lazy">
+        <div class="about-text">
+          <h3>Welcome to My Portfolio!</h3>
+          <p>I am aspiring to become a <strong>Full Stack Web Developer</strong> with a passion for creating innovative and user-friendly web applications. Currently pursuing Master's in Computer Applications (MCA) and residing in Bhopal.</p>
+          <p>I am co-friendly by nature and excel at clear one-to-one communications. My goal is to work with progressive organizations where I can utilize my technical knowledge and skills for mutual growth.</p>
+          <div class="cta-buttons">
+            <a href="#contact" class="btn btn-primary">Hire Me</a>
+          </div>
         </div>
-    </nav>
+      </div>
+    </div>
+  </section>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-bg"></div>
-        <div class="hero-content">
-            <h1>Hi, I'm Ashwani Singh</h1>
-            <p class="subtitle">Aspiring Full Stack Web Developer</p>
-            <p class="description">Passionate about creating innovative and user-friendly web applications. Currently pursuing Master's in Computer Applications with a focus on modern web technologies and clean, maintainable code.</p>
-            <div class="cta-buttons">
-                <a href="about.html" class="btn btn-primary cta-button">Learn More</a>
-                <a href="resume.html" class="btn btn-secondary cta-button">View Resume</a>
-            </div>
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid grid-responsive">
+        <div class="skill-card card">
+          <i class="fab fa-html5"></i>
+          <h4>Frontend</h4>
+          <p>HTML5, CSS3, JavaScript, React, Bootstrap</p>
         </div>
-    </section>
-
-    <!-- Quick About Section -->
-    <section id="quick-about" class="section about-preview bg-light">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-preview-content fade-in">
-                <div class="about-image-container">
-                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDMwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIiByeD0iMTUwIiBmaWxsPSIjNjY3ZWVhIi8+Cjx0ZXh0IHg9IjE1MCIgeT0iMTYwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1zaXplPSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iYm9sZCI+QVM8L3RleHQ+Cjwvc3ZnPg==" alt="Ashwani Singh Profile" class="profile-image">
-                </div>
-                <div class="about-text">
-                    <h3>Welcome to My Portfolio!</h3>
-                    <p>I am aspiring to become a <strong>Full Stack Web Developer</strong> with a passion for creating innovative and user-friendly web applications. Currently pursuing Master's in Computer Applications (MCA) and residing in Bhopal.</p>
-                    
-                    <p>I am co-friendly by nature and excel at clear one-to-one communications. My goal is to work with progressive organizations where I can utilize my technical knowledge and skills for mutual growth.</p>
-                    
-                    <div class="cta-buttons">
-                        <a href="about.html" class="btn btn-primary">Learn More About Me</a>
-                    </div>
-                </div>
-            </div>
+        <div class="skill-card card">
+          <i class="fas fa-server"></i>
+          <h4>Backend</h4>
+          <p>PHP, Python, MySQL, Database Management</p>
         </div>
-    </section>
-
-    <!-- Skills Preview -->
-    <section id="skills-preview" class="section skills-preview">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid grid-responsive">
-                <div class="skill-card card fade-in">
-                    <i class="fab fa-html5"></i>
-                    <h4>Frontend Development</h4>
-                    <p>HTML5, CSS3, JavaScript, React, Bootstrap</p>
-                </div>
-                <div class="skill-card card fade-in">
-                    <i class="fas fa-server"></i>
-                    <h4>Backend Development</h4>
-                    <p>PHP, Python, MySQL, Database Management</p>
-                </div>
-                <div class="skill-card card fade-in">
-                    <i class="fas fa-code"></i>
-                    <h4>Programming</h4>
-                    <p>Modern JavaScript, ES6+, Clean Code Practices</p>
-                </div>
-                <div class="skill-card card fade-in">
-                    <i class="fas fa-mobile-alt"></i>
-                    <h4>Responsive Design</h4>
-                    <p>Mobile-first approach, Cross-browser compatibility</p>
-                </div>
-            </div>
-            <div class="section-cta">
-                <a href="skills.html" class="btn btn-primary">View All Skills</a>
-            </div>
+        <div class="skill-card card">
+          <i class="fas fa-code"></i>
+          <h4>Programming</h4>
+          <p>Modern JavaScript, ES6+, Clean Code Practices</p>
         </div>
-    </section>
-
-    <!-- Certificates Preview -->
-    <section id="cert-preview" class="section certificates-preview bg-light">
-        <div class="container">
-            <h2 class="section-title">Certificates & Achievements</h2>
-            <p class="text-center text-muted mb-4">These certificates showcase my verified skills and milestones in web development, design, and related technologies.</p>
-
-            <div class="certificates-grid grid-3col">
-                <div class="cert-card card fade-in">
-                    <div class="cert-placeholder">
-                        <i class="fab fa-html5"></i>
-                    </div>
-                    <h3 class="cert-title">HTML5 Certification</h3>
-                    <p class="cert-desc">Professional Web Development</p>
-                </div>
-
-                <div class="cert-card card fade-in">
-                    <div class="cert-placeholder">
-                        <i class="fab fa-css3-alt"></i>
-                    </div>
-                    <h3 class="cert-title">CSS3 & Responsive Design</h3>
-                    <p class="cert-desc">Advanced Styling Certification</p>
-                </div>
-
-                <div class="cert-card card fade-in">
-                    <div class="cert-placeholder">
-                        <i class="fab fa-js-square"></i>
-                    </div>
-                    <h3 class="cert-title">JavaScript Programming</h3>
-                    <p class="cert-desc">Modern Web Development</p>
-                </div>
-            </div>
-            
-            <div class="section-cta">
-                <a href="certificates.html" class="btn btn-primary">View All Certificates</a>
-            </div>
+        <div class="skill-card card">
+          <i class="fas fa-mobile-alt"></i>
+          <h4>Responsive Design</h4>
+          <p>Mobile-first, Cross-browser compatibility</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Quick Contact -->
-    <section id="quick-contact" class="section contact-preview">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-preview-content fade-in">
-                <p>Ready to start your next project? Let's work together to create something amazing!</p>
-                <div class="contact-info-quick">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>ashwani.singh@email.com</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Bhopal, Madhya Pradesh, India</span>
-                    </div>
-                </div>
-                <div class="cta-buttons">
-                    <a href="contact.html" class="btn btn-primary">Contact Me</a>
-                    <a href="resume.html" class="btn btn-secondary">View Resume</a>
-                </div>
-            </div>
+  <!-- Projects Section -->
+  <section id="projects" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid grid-3col">
+        <div class="project-card card">
+          <img src="assets/project1.jpg" alt="Project 1 Screenshot" loading="lazy">
+          <h3>Portfolio Website</h3>
+          <p>A responsive portfolio website showcasing my work and skills.</p>
+          <a href="https://github.com/23ashwaniak" target="_blank" class="btn btn-secondary">View Code</a>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <a href="about.html">About</a>
-                    <a href="skills.html">Skills</a>
-                    <a href="resume.html">Resume</a>
-                    <a href="certificates.html">Certificates</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Contact Information</h4>
-                    <p>Bhopal, Madhya Pradesh, India</p>
-                    <p>Email: ashwani.singh@email.com</p>
-                    <p>Phone: +91 XXXXX XXXXX</p>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Follow Me</h4>
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/cool_dude_ashwani/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/ashwani-singh-26084725b/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://github.com/23ashwaniak" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.sololearn.com/Profile/18990334/?ref=app" target="_blank" rel="noopener" class="social-link" aria-label="SoloLearn">
-                            <i class="fas fa-graduation-cap"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2024 Ashwani Singh. All rights reserved.</p>
-            </div>
+        <div class="project-card card">
+          <img src="assets/project2.jpg" alt="Project 2 Screenshot" loading="lazy">
+          <h3>Task Manager</h3>
+          <p>A full-stack task management app built with React and PHP/MySQL.</p>
+          <a href="#" class="btn btn-secondary">View Code</a>
         </div>
-    </footer>
+        <div class="project-card card">
+          <img src="assets/project3.jpg" alt="Project 3 Screenshot" loading="lazy">
+          <h3>E-commerce Store</h3>
+          <p>A modern online shop with product filtering and secure checkout.</p>
+          <a href="#" class="btn btn-secondary">View Code</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Scroll to Top Button -->
-    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+  <!-- Certificates Section -->
+  <section id="certificates" class="section">
+    <div class="container">
+      <h2 class="section-title">Certificates & Achievements</h2>
+      <div class="certificates-grid grid-3col">
+        <div class="cert-card card">
+          <img src="assets/cert-html.png" alt="HTML5 Certification" loading="lazy">
+          <h3>HTML5 Certification</h3>
+          <p>Professional Web Development</p>
+        </div>
+        <div class="cert-card card">
+          <img src="assets/cert-css.png" alt="CSS3 Certification" loading="lazy">
+          <h3>CSS3 & Responsive Design</h3>
+          <p>Advanced Styling Certification</p>
+        </div>
+        <div class="cert-card card">
+          <img src="assets/cert-js.png" alt="JavaScript Certification" loading="lazy">
+          <h3>JavaScript Programming</h3>
+          <p>Modern Web Development</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="app.js"></script>
+  <!-- Contact Section -->
+  <section id="contact" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="text-center">Ready to start your next project? Let's create something amazing together!</p>
+      <form class="contact-form" action="https://formspree.io/f/{your-id}" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="_replyto" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-section">
+        <h4>Contact Info</h4>
+        <p>Bhopal, Madhya Pradesh, India</p>
+        <p>Email: <a href="mailto:ashwani.singh@email.com">ashwani.singh@email.com</a></p>
+        <p>Phone: +91 XXXXX XXXXX</p>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Me</h4>
+        <div class="social-links">
+          <a href="https://www.instagram.com/cool_dude_ashwani/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/ashwani-singh-26084725b/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/23ashwaniak" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.sololearn.com/Profile/18990334/?ref=app" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Ashwani Singh. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+  <script>
+    // Dynamic Year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Typing Effect
+    const typingText = ["Aspiring Full Stack Developer", "Frontend & Backend Enthusiast", "Problem Solver"];
+    let i = 0, j = 0, currentText = "", isDeleting = false;
+    function typeEffect() {
+      currentText = typingText[i];
+      document.getElementById("typing").textContent = currentText.substring(0, j);
+      if (!isDeleting && j < currentText.length) {
+        j++; setTimeout(typeEffect, 100);
+      } else if (isDeleting && j > 0) {
+        j--; setTimeout(typeEffect, 50);
+      } else {
+        isDeleting = !isDeleting;
+        if (!isDeleting) i = (i + 1) % typingText.length;
+        setTimeout(typeEffect, 1000);
+      }
+    }
+    typeEffect();
+  </script>
 </body>
 </html>

@@ -1,306 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Ashwani Singh</title>
-    <meta name="description" content="Get in touch with Ashwani Singh - Full Stack Developer for web development projects and collaborations.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Ashwani Singh</title>
+  <meta name="description" content="Get in touch with Ashwani Singh - Full Stack Developer for web development projects and collaborations.">
+  <meta name="keywords" content="Ashwani Singh Contact, Web Development, Freelance, Collaboration, Hire Developer">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Contact - Ashwani Singh">
+  <meta property="og:description" content="Reach out to Ashwani Singh for web development, freelance opportunities, and collaborations.">
+  <meta property="og:image" content="assets/contact-preview.jpg">
+  <meta property="og:url" content="https://yourdomain.com/contact.html">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <!-- Progress Bar -->
-    <div class="progress-bar" id="progressBar" aria-label="Page scroll progress"></div>
+  <!-- Skip to Content -->
+  <a href="#contact-page" class="skip-to-content">Skip to main content</a>
 
-    <!-- Navigation -->
-    <nav class="navbar" role="navigation" aria-label="Main navigation">
-        <div class="nav-container">
-            <div class="logo">
-                <a href="index.html" aria-label="Ashwani Singh - Home">AS</a>
+  <!-- Progress Bar -->
+  <div class="progress-bar" id="progressBar" aria-label="Page scroll progress"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="index.html" aria-label="Ashwani Singh - Home">AS</a>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="skills.html" class="nav-link">Skills</a></li>
+        <li><a href="resume.html" class="nav-link">Resume</a></li>
+        <li><a href="certificates.html" class="nav-link">Certificates</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+      </ul>
+      <button class="mobile-menu" aria-label="Toggle mobile menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Theme Toggle -->
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header bg-gradient">
+    <div class="container">
+      <h1>Get In Touch</h1>
+      <p>Let's discuss your project and how we can work together</p>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section id="contact-page" class="contact-page section">
+    <div class="container">
+      <div class="contact-content grid-2col">
+        
+        <!-- Contact Information -->
+        <div class="contact-info fade-in">
+          <h2>Contact Information</h2>
+          <p>I'm always excited to hear about new opportunities and interesting projects. Feel free to reach out!</p>
+
+          <div class="contact-methods">
+            <div class="contact-method card">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div class="contact-details">
+                <h4>Email</h4>
+                <p>ashwani.singh@email.com</p>
+                <a href="mailto:ashwani.singh@email.com" class="btn btn-sm">Send Email</a>
+              </div>
             </div>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="skills.html" class="nav-link">Skills</a></li>
-                <li><a href="resume.html" class="nav-link">Resume</a></li>
-                <li><a href="certificates.html" class="nav-link">Certificates</a></li>
-                <li><a href="contact.html" class="nav-link active">Contact</a></li>
-            </ul>
-            <button class="mobile-menu" aria-label="Toggle mobile menu">
-                <span></span>
-                <span></span>
-                <span></span>
+
+            <div class="contact-method card">
+              <div class="contact-icon"><i class="fas fa-phone"></i></div>
+              <div class="contact-details">
+                <h4>Phone</h4>
+                <p>+91 XXXXX XXXXX</p>
+                <a href="tel:+91XXXXXXXXXX" class="btn btn-sm">Call Now</a>
+              </div>
+            </div>
+
+            <div class="contact-method card">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="contact-details">
+                <h4>Location</h4>
+                <p>Bhopal, Madhya Pradesh</p>
+                <p>India</p>
+              </div>
+            </div>
+
+            <div class="contact-method card">
+              <div class="contact-icon"><i class="fas fa-clock"></i></div>
+              <div class="contact-details">
+                <h4>Availability</h4>
+                <p>Monday - Friday</p>
+                <p>9:00 AM - 6:00 PM IST</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div class="social-connect">
+            <h4>Connect With Me</h4>
+            <div class="social-links-contact">
+              <a href="https://www.linkedin.com/in/ashwani-singh-26084725b/" target="_blank" class="social-btn linkedin">
+                <i class="fab fa-linkedin-in"></i> LinkedIn
+              </a>
+              <a href="https://github.com/23ashwaniak" target="_blank" class="social-btn github">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="https://www.instagram.com/cool_dude_ashwani/" target="_blank" class="social-btn instagram">
+                <i class="fab fa-instagram"></i> Instagram
+              </a>
+              <a href="https://www.sololearn.com/Profile/18990334/?ref=app" target="_blank" class="social-btn sololearn">
+                <i class="fas fa-graduation-cap"></i> SoloLearn
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-container fade-in">
+          <h2>Send me a message</h2>
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" required aria-describedby="firstName-error">
+                <span class="error-message" id="firstName-error"></span>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required aria-describedby="email-error">
+                <span class="error-message" id="email-error"></span>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <select id="subject" name="subject" required aria-describedby="subject-error">
+                <option value="">Select a subject</option>
+                <option value="web-development">Web Development Project</option>
+                <option value="collaboration">Collaboration Opportunity</option>
+                <option value="freelance">Freelance Work</option>
+                <option value="internship">Internship Inquiry</option>
+                <option value="general">General Inquiry</option>
+                <option value="other">Other</option>
+              </select>
+              <span class="error-message" id="subject-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="budget">Project Budget (Optional)</label>
+              <select id="budget" name="budget">
+                <option value="">Select budget range</option>
+                <option value="under-10k">Under ₹10,000</option>
+                <option value="10k-25k">₹10,000 - ₹25,000</option>
+                <option value="25k-50k">₹25,000 - ₹50,000</option>
+                <option value="50k-100k">₹50,000 - ₹1,00,000</option>
+                <option value="above-100k">Above ₹1,00,000</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="timeline">Project Timeline (Optional)</label>
+              <select id="timeline" name="timeline">
+                <option value="">Select timeline</option>
+                <option value="asap">ASAP</option>
+                <option value="1-week">Within 1 week</option>
+                <option value="2-weeks">Within 2 weeks</option>
+                <option value="1-month">Within 1 month</option>
+                <option value="2-3-months">2-3 months</option>
+                <option value="flexible">Flexible</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="6" placeholder="Tell me about your project, requirements, or any questions you have..." required aria-describedby="message-error"></textarea>
+              <span class="error-message" id="message-error"></span>
+            </div>
+
+            <div class="form-group checkbox-group">
+              <label class="checkbox-container">
+                <input type="checkbox" name="newsletter" value="yes">
+                <span class="checkmark"></span>
+                I'd like to receive updates about new projects and blog posts
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary submit-btn">
+              <i class="fas fa-paper-plane"></i>
+              <span class="btn-text">Send Message</span>
             </button>
+          </form>
         </div>
-    </nav>
+      </div>
 
-    <!-- Page Header -->
-    <header class="page-header bg-gradient">
-        <div class="container">
-            <h1>Get In Touch</h1>
-            <p>Let's discuss your project and how we can work together</p>
+      <!-- FAQ Section -->
+      <div class="faq-section fade-in">
+        <h2 class="text-center">Frequently Asked Questions</h2>
+        <div class="faq-grid grid-2col" role="tablist">
+          <div class="faq-item card" role="tabpanel">
+            <h4>What services do you offer?</h4>
+            <p>I specialize in full-stack web development, including frontend (HTML, CSS, JavaScript, React) and backend (PHP, Python, MySQL) development. I can help with responsive websites, web applications, and database design.</p>
+          </div>
+          <div class="faq-item card" role="tabpanel">
+            <h4>What's your typical project timeline?</h4>
+            <p>Project timelines vary based on complexity. Simple websites typically take 1-2 weeks, while complex web applications may take 1-3 months. I'll provide a detailed timeline after discussing your requirements.</p>
+          </div>
+          <div class="faq-item card" role="tabpanel">
+            <h4>Do you work on remote projects?</h4>
+            <p>Yes! I'm experienced with remote collaboration and use tools like Git, Slack, and video calls to ensure smooth communication throughout the project.</p>
+          </div>
+          <div class="faq-item card" role="tabpanel">
+            <h4>What's your development process?</h4>
+            <p>I follow a structured approach: requirement analysis, planning, design mockups, development, testing, and deployment. I keep clients updated at each stage.</p>
+          </div>
         </div>
-    </header>
+      </div>
 
-    <!-- Contact Section -->
-    <section class="contact-page section">
-        <div class="container">
-            <div class="contact-content grid-2col">
-                <!-- Contact Information -->
-                <div class="contact-info fade-in">
-                    <h2>Contact Information</h2>
-                    <p>I'm always excited to hear about new opportunities and interesting projects. Feel free to reach out!</p>
-                    
-                    <div class="contact-methods">
-                        <div class="contact-method card">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>Email</h4>
-                                <p>ashwani.singh@email.com</p>
-                                <a href="mailto:ashwani.singh@email.com" class="btn btn-sm">Send Email</a>
-                            </div>
-                        </div>
-
-                        <div class="contact-method card">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>Phone</h4>
-                                <p>+91 XXXXX XXXXX</p>
-                                <a href="tel:+91XXXXXXXXXX" class="btn btn-sm">Call Now</a>
-                            </div>
-                        </div>
-
-                        <div class="contact-method card">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>Location</h4>
-                                <p>Bhopal, Madhya Pradesh</p>
-                                <p>India</p>
-                            </div>
-                        </div>
-
-                        <div class="contact-method card">
-                            <div class="contact-icon">
-                                <i class="fas fa-clock"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>Availability</h4>
-                                <p>Monday - Friday</p>
-                                <p>9:00 AM - 6:00 PM IST</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Social Links -->
-                    <div class="social-connect">
-                        <h4>Connect With Me</h4>
-                        <div class="social-links-contact">
-                            <a href="https://www.linkedin.com/in/ashwani-singh-26084725b/" target="_blank" rel="noopener" class="social-btn linkedin">
-                                <i class="fab fa-linkedin-in"></i>
-                                LinkedIn
-                            </a>
-                            <a href="https://github.com/23ashwaniak" target="_blank" rel="noopener" class="social-btn github">
-                                <i class="fab fa-github"></i>
-                                GitHub
-                            </a>
-                            <a href="https://www.instagram.com/cool_dude_ashwani/" target="_blank" rel="noopener" class="social-btn instagram">
-                                <i class="fab fa-instagram"></i>
-                                Instagram
-                            </a>
-                            <a href="https://www.sololearn.com/Profile/18990334/?ref=app" target="_blank" rel="noopener" class="social-btn sololearn">
-                                <i class="fas fa-graduation-cap"></i>
-                                SoloLearn
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Contact Form -->
-                <div class="contact-form-container fade-in">
-                    <h2>Send me a message</h2>
-                    <form class="contact-form" id="contactForm" novalidate>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="firstName">First Name *</label>
-                                <input type="text" id="firstName" name="firstName" required aria-describedby="firstName-error">
-                                <span class="error-message" id="firstName-error"></span>
-                            </div>
-                            <div class="form-group">
-                                <label for="lastName">Last Name</label>
-                                <input type="text" id="lastName" name="lastName">
-                            </div>
-                        </div>
-                        
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="email">Email Address *</label>
-                                <input type="email" id="email" name="email" required aria-describedby="email-error">
-                                <span class="error-message" id="email-error"></span>
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Phone Number</label>
-                                <input type="tel" id="phone" name="phone">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="subject">Subject *</label>
-                            <select id="subject" name="subject" required aria-describedby="subject-error">
-                                <option value="">Select a subject</option>
-                                <option value="web-development">Web Development Project</option>
-                                <option value="collaboration">Collaboration Opportunity</option>
-                                <option value="freelance">Freelance Work</option>
-                                <option value="internship">Internship Inquiry</option>
-                                <option value="general">General Inquiry</option>
-                                <option value="other">Other</option>
-                            </select>
-                            <span class="error-message" id="subject-error"></span>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="budget">Project Budget (Optional)</label>
-                            <select id="budget" name="budget">
-                                <option value="">Select budget range</option>
-                                <option value="under-10k">Under ₹10,000</option>
-                                <option value="10k-25k">₹10,000 - ₹25,000</option>
-                                <option value="25k-50k">₹25,000 - ₹50,000</option>
-                                <option value="50k-100k">₹50,000 - ₹1,00,000</option>
-                                <option value="above-100k">Above ₹1,00,000</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="timeline">Project Timeline (Optional)</label>
-                            <select id="timeline" name="timeline">
-                                <option value="">Select timeline</option>
-                                <option value="asap">ASAP</option>
-                                <option value="1-week">Within 1 week</option>
-                                <option value="2-weeks">Within 2 weeks</option>
-                                <option value="1-month">Within 1 month</option>
-                                <option value="2-3-months">2-3 months</option>
-                                <option value="flexible">Flexible</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Message *</label>
-                            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project, requirements, or any questions you have..." required aria-describedby="message-error"></textarea>
-                            <span class="error-message" id="message-error"></span>
-                        </div>
-
-                        <div class="form-group checkbox-group">
-                            <label class="checkbox-container">
-                                <input type="checkbox" name="newsletter" value="yes">
-                                <span class="checkmark"></span>
-                                I'd like to receive updates about new projects and blog posts
-                            </label>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary submit-btn">
-                            <i class="fas fa-paper-plane"></i>
-                            <span class="btn-text">Send Message</span>
-                        </button>
-                    </form>
-                </div>
-            </div>
-
-            <!-- FAQ Section -->
-            <div class="faq-section fade-in">
-                <h2 class="text-center">Frequently Asked Questions</h2>
-                <div class="faq-grid grid-2col">
-                    <div class="faq-item card">
-                        <h4>What services do you offer?</h4>
-                        <p>I specialize in full-stack web development, including frontend (HTML, CSS, JavaScript, React) and backend (PHP, Python, MySQL) development. I can help with responsive websites, web applications, and database design.</p>
-                    </div>
-                    <div class="faq-item card">
-                        <h4>What's your typical project timeline?</h4>
-                        <p>Project timelines vary based on complexity. Simple websites typically take 1-2 weeks, while complex web applications may take 1-3 months. I'll provide a detailed timeline after discussing your requirements.</p>
-                    </div>
-                    <div class="faq-item card">
-                        <h4>Do you work on remote projects?</h4>
-                        <p>Yes! I'm experienced with remote collaboration and use tools like Git, Slack, and video calls to ensure smooth communication throughout the project.</p>
-                    </div>
-                    <div class="faq-item card">
-                        <h4>What's your development process?</h4>
-                        <p>I follow a structured approach: requirement analysis, planning, design mockups, development, testing, and deployment. I keep clients updated at each stage.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Quick Actions -->
-            <div class="quick-actions fade-in">
-                <h3 class="text-center">Quick Actions</h3>
-                <div class="action-buttons grid-responsive">
-                    <a href="resume.html" class="action-btn card text-center">
-                        <i class="fas fa-file-alt"></i>
-                        <span>View Resume</span>
-                    </a>
-                    <a href="certificates.html" class="action-btn card text-center">
-                        <i class="fas fa-certificate"></i>
-                        <span>See Certificates</span>
-                    </a>
-                    <a href="skills.html" class="action-btn card text-center">
-                        <i class="fas fa-code"></i>
-                        <span>Check Skills</span>
-                    </a>
-                    <button class="action-btn card text-center" onclick="window.print()" aria-label="Print contact information">
-                        <i class="fas fa-print"></i>
-                        <span>Print Contact</span>
-                    </button>
-                </div>
-            </div>
+      <!-- Quick Actions -->
+      <div class="quick-actions fade-in">
+        <h3 class="text-center">Quick Actions</h3>
+        <div class="action-buttons grid-responsive">
+          <a href="resume.html" class="action-btn card text-center"><i class="fas fa-file-alt"></i><span>View Resume</span></a>
+          <a href="certificates.html" class="action-btn card text-center"><i class="fas fa-certificate"></i><span>See Certificates</span></a>
+          <a href="skills.html" class="action-btn card text-center"><i class="fas fa-code"></i><span>Check Skills</span></a>
+          <button class="action-btn card text-center" onclick="window.print()" aria-label="Print contact information">
+            <i class="fas fa-print"></i><span>Print Contact</span>
+          </button>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <a href="about.html">About</a>
-                    <a href="skills.html">Skills</a>
-                    <a href="resume.html">Resume</a>
-                    <a href="certificates.html">Certificates</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Follow Me</h4>
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/cool_dude_ashwani/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/ashwani-singh-26084725b/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://github.com/23ashwaniak" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2024 Ashwani Singh. All rights reserved.</p>
-            </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="resume.html">Resume</a>
+        <a href="certificates.html">Certificates</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Me</h4>
+        <div class="social-links">
+          <a href="https://www.instagram.com/cool_dude_ashwani/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/ashwani-singh-26084725b/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/23ashwaniak" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
         </div>
-    </footer>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Ashwani Singh. All rights reserved.</p>
+    </div>
+  </footer>
 
-    <!-- Scroll to Top Button -->
-    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+  <!-- Scroll to Top -->
+  <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
 
-    <script src="app.js"></script>
+  <script src="app.js"></script>
+  <script>
+    // Dynamic Year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
